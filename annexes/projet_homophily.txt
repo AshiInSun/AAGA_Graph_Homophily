@@ -1,0 +1,38 @@
+
+1
+
+110%
+Sujet : Revisiting Graph Homophily Measures
+Semaine II
+Mehdi Naima
+Description g ́en ́erale du probl`eme
+L’homophilie est une propri ́et ́e des graphes qui d ́ecrit la tendance des arˆetes `a relier des nœuds similaires. Il existe
+plusieurs mesures utilis ́ees pour  ́evaluer l’homophilie, mais toutes pr ́esentent certains inconv ́enients : en particulier,
+elles ne peuvent pas ˆetre utilis ́ees de mani`ere fiable pour comparer des ensembles de donn ́ees dont le nombre de
+classes et l’ ́equilibre entre les tailles de classes varient. Pour le d ́emontrer, des travaux ant ́erieurs sur l’homophilie
+des graphes ont sugg ́er ́e plusieurs propri ́et ́es souhaitables pour une bonne mesure de l’homophilie, tout en notant
+qu’aucune mesure existante de l’homophilie ne poss`ede toutes ces propri ́et ́es.
+Un article r ́ecent tente de rem ́edier `a ce probl`eme. Nous allons impl ́ementer les mesures pr ́esent ́ees dedans et
+reproduire une partie des r ́esultats.
+Description d ́etaill ́ee
+— Impl ́ementer les mesures d’homophilie pr ́esent ́ees `a la Section 2. de [1].
+— Tester les r ́esultats d’incoh ́erences de la Section 3 sur deux nouveaux datasets et discuter les r ́esultats obtenus
+`a la lumi`ere de ceux de l’article.
+— Impl ́ementer la mesure d’homophilie non-biais ́ees pr ́esent ́ee dans l’article.
+— Tester les diff ́erentes mesures sur quelques nouveaux datasets. LEs r ́esultats sont-ils similaires `a ceux du
+Tableau 5 ?
+ ́Evaluation du projet
+Attendus de base.
+— Une impl ́ementation compl`ete et un rapport d ́etaillant votre travail.
+— Le code peut ˆetre r ́edig ́e dans n’importe quel langage, mais un makefile (si c’est un langage compil ́e) doit
+permettre la compilation sur les machines de la PPTI.
+— Les commandes lan ̧cant les diff ́erentes simulations doivent ˆetre group ́ees dans un fichier bash. Ainsi l’ex ́ecution
+du fichier bash doit pouvoir lancer toutes les simulations.
+— Une documentation doit ˆetre fournie expliquant les options des diff ́erentes commandes.
+Un projet ne respectant pas ces attendus de base n’aura pas la moyenne.
+Attendus avanc ́es. Discuter de quelques mesures d’homophilie dans des hypergraphes et voir si les propri ́et ́es 1
+`a 6 sont respect ́ees.
+R ́ef ́erences
+[1] Mikhail Mironov and Liudmila Prokhorenkova. Revisiting graph homophily measures. arXiv preprint
+2412.09663, 2024.
+1
