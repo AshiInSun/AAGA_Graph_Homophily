@@ -1,0 +1,2 @@
+- Quelles données utilisé pour faire nos tests ?
+- Est ce que networkx est une bonne solution pour travailler sur nos graphes ?
