@@ -43,6 +43,21 @@ def edge_homophily(G):
     edge_homophilic_measure = homo_edges / total_of_edges
     return edge_homophilic_measure
 
+def node_homophily(G):
+    total_of_nodes = G.number_of_nodes()
+    homo_node = 0
+    for node in G.nodes():
+        local_homo = 0
+        for neighbor in G.neighbors(node):
+            if G.nodes[neighbor]['label'] == G.nodes[node]['label']:
+                local_homo+=1
+        local_homo = local_homo/G.degree(node)
+        homo_node += local_homo
+    homo_node = homo_node / total_of_nodes
+    return homo_node
+
 g_edge_homophily = edge_homophily(G)
-print(f"\nGraphe homophily : {g_edge_homophily}")
+g_node_homophily = node_homophily(G)
+print(f"\nGraphe edge homophily : {g_edge_homophily}")
+print(f"Graphe node homophily : {g_node_homophily}")
 plot_graph(G)
