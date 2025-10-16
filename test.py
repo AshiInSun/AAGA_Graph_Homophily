@@ -56,8 +56,43 @@ def node_homophily(G):
     homo_node = homo_node / total_of_nodes
     return homo_node
 
+def somme_degres_label_k(G, k):
+    somme = 0
+    for node in G.nodes():
+        if G.nodes[node]['label'] == k:
+            somme += G.degree(node)
+    return somme
+
+#on peut tomber sur 0 : c'est normal (je pense).
+def class_homophily(G):
+    m = set(nx.get_node_attributes(G, 'label').values())
+    homophilia = 0
+    for label in m:
+
+        somme_interieur = 0
+        nk = 0
+        for v in G.nodes():
+            if G.nodes[v]['label'] == label:
+                nk += 1
+                nb_homo_neighbor = 0
+                for neighbor in G.neighbors(v):
+                    if G.nodes[neighbor]['label'] == label:
+                        nb_homo_neighbor += 1
+                somme_interieur += nb_homo_neighbor
+        Dk = somme_degres_label_k(G, label)
+        somme_interieur = somme_interieur / Dk
+        nksurn = nk / G.number_of_nodes()
+        resultat_intermediaire = somme_interieur - nksurn
+        if resultat_intermediaire < 0:
+            resultat_intermediaire = 0
+        homophilia += resultat_intermediaire
+    homophilia = homophilia / (m.__len__())
+    return homophilia
+
 g_edge_homophily = edge_homophily(G)
 g_node_homophily = node_homophily(G)
+g_class_homophily = class_homophily(G)
 print(f"\nGraphe edge homophily : {g_edge_homophily}")
 print(f"Graphe node homophily : {g_node_homophily}")
+print(f"Graphe class homophily : {g_class_homophily}")
 plot_graph(G)
