@@ -96,3 +96,18 @@ print(f"\nGraphe edge homophily : {g_edge_homophily}")
 print(f"Graphe node homophily : {g_node_homophily}")
 print(f"Graphe class homophily : {g_class_homophily}")
 plot_graph(G)
+
+
+def adjusted_homophily(G):
+    edje_homophily= edge_homophily(G)
+    m = set(nx.get_node_attributes(G, 'label').values())
+    my_term = (2*G.number_of_edges())**2
+    my_firstSum=0
+    for label in m:
+        my_firstSum+=somme_degres_label_k(G,label)**2/my_term
+
+    my_nominator= edje_homophily-my_firstSum
+    my_deniminator = 1-my_firstSum
+
+    adjusted_homophily = my_nominator/my_deniminator
+    return adjusted_homophily
