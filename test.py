@@ -11,7 +11,7 @@ import numpy as np
 
 
 
-G = nx.erdos_renyi_graph(n=30, p=0.2, seed=42)
+G = nx.read_gml("datasets/Protein_GML/enzyme_1.gml")
 # Assigner des labels aléatoires (par exemple 3 classes)
 labels = {}
 for node in G.nodes():
