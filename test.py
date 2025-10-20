@@ -89,15 +89,6 @@ def class_homophily(G):
     homophilia = homophilia / (m.__len__())
     return homophilia
 
-g_edge_homophily = edge_homophily(G)
-g_node_homophily = node_homophily(G)
-g_class_homophily = class_homophily(G)
-print(f"\nGraphe edge homophily : {g_edge_homophily}")
-print(f"Graphe node homophily : {g_node_homophily}")
-print(f"Graphe class homophily : {g_class_homophily}")
-plot_graph(G)
-
-
 def adjusted_homophily(G):
     edje_homophily= edge_homophily(G)
     m = set(nx.get_node_attributes(G, 'label').values())
@@ -111,3 +102,15 @@ def adjusted_homophily(G):
 
     adjusted_homophily = my_nominator/my_deniminator
     return adjusted_homophily
+
+
+# Tests
+g_edge_homophily = edge_homophily(G)
+g_node_homophily = node_homophily(G)
+g_class_homophily = class_homophily(G)
+g_adjusted_homophily = adjusted_homophily(G)
+print(f"\nGraphe edge homophily : {g_edge_homophily}")
+print(f"Graphe node homophily : {g_node_homophily}")
+print(f"Graphe class homophily : {g_class_homophily}")
+print(f"Graphe adjusted homophily : {g_adjusted_homophily}")
+plot_graph(G)
