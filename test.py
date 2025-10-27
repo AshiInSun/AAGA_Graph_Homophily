@@ -11,7 +11,7 @@ import numpy as np
 
 
 
-G = nx.read_gml("datasets/AIDS_GML/42181.gml")
+G = nx.read_gml("datasets/OGB_MOLPCBA_GML/graph_10.gml")
 # Assigner des labels aléatoires (par exemple 3 classes)
 #labels = {}
 #for node in G.nodes():
@@ -117,7 +117,7 @@ def normalize_inplace(G):
 
 # Tests
 def main():
-    label_G = 'symbol'
+    label_G = 'chem'
     normalize_inplace(G)
     g_edge_homophily = edge_homophily(G, class_attr=label_G)
     g_node_homophily = node_homophily(G, class_attr=label_G)

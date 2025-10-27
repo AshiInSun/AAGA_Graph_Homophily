@@ -1,10 +1,55 @@
 import os
-
+import ogb
 import networkx as nx
+from torch_geometric.utils import to_networkx
 
 import test
 from test import normalize_inplace
+
 path_dataset = "datasets/Mutagenicity_GML"
+
+import torch
+from torch.serialization import add_safe_globals
+from torch_geometric.data.data import DataEdgeAttr
+from torch_geometric.data.data import DataTensorAttr
+from torch_geometric.data.storage import GlobalStorage
+from tqdm import tqdm
+
+safe_classes = []
+safe_classes += [DataTensorAttr, DataEdgeAttr]
+safe_classes.append(GlobalStorage)
+add_safe_globals(safe_classes)
+from ogb.graphproppred import PygGraphPropPredDataset
+
+dataset = PygGraphPropPredDataset(name='ogbg-molpcba', root='data/ogb')
+max_graphs = 2000
+output_dir = "datasets/OGB_MOLPCBA_GML"
+
+print("Nombre de graphes :", len(dataset))
+print("Exemple:", dataset[0])   # (Data, label)
+
+def conversion(dataset, output_dir="datasets/OGB_MOLPCBA_GML", max_graphs=2000):
+    os.makedirs(output_dir, exist_ok=True)
+    print(f"Conversion des {max_graphs} premiers graphes du dataset OGB en .gml...")
+
+    for i in tqdm(range(min(max_graphs, len(dataset)))):
+        data = dataset[i]
+        G = to_networkx(data, to_undirected=True)
+
+        # Exemple : on utilise la première feature du vecteur x comme "type d’atome"
+        if hasattr(data, "x"):
+            node_labels = {n: int(data.x[n][0].item()) for n in range(data.num_nodes)}
+            nx.set_node_attributes(G, node_labels, name="chem")
+        else:
+            # Fallback si pas de x -> un seul label pour tout le graphe
+            nx.set_node_attributes(G, {n: 0 for n in G.nodes()}, name="chem")
+
+        # On ignore data.y (trop complexe pour un label de nœud)
+        nx.write_gml(G, os.path.join(output_dir, f"graph_{i}.gml"))
+
+    print(f"✅ {max_graphs} graphes sauvegardés dans : {output_dir}")
+
+
 def experimental_comparaison(path, label_G):
     chemin_dossier = path
     max_files = 2000  # Nombre maximum de fichiers à traiter
@@ -79,4 +124,5 @@ def experimental_comparaison(path, label_G):
     print(f"Accord entre node et class homophily: {node_class_agreement}")
     print(f"Accord entre node et adjusted homophily: {node_adjusted_agreement}")
     print(f"Accord entre class et adjusted homophily: {class_adjusted_agreement}")
-experimental_comparaison(path_dataset, label_G="chem")
+
+experimental_comparaison(output_dir, label_G="chem")
