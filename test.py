@@ -11,7 +11,7 @@ import numpy as np
 
 
 
-G = nx.read_gml("datasets/AIDS_GML/91.gml")
+G = nx.read_gml("datasets/AIDS_GML/42181.gml")
 # Assigner des labels aléatoires (par exemple 3 classes)
 #labels = {}
 #for node in G.nodes():
@@ -53,6 +53,10 @@ def node_homophily(G, class_attr):
                 local_homo+=1
         local_homo = local_homo/G.degree(node)
         homo_node += local_homo
+    if total_of_nodes==0:
+        return 0
+    #c'est que soit le graph est vide, soit il n'est composé que de noeuds sans aucune arete
+    #et on peut considerer qu'il n'est pas du tout homophile.
     homo_node = homo_node / total_of_nodes
     return homo_node
 
@@ -103,17 +107,26 @@ def adjusted_homophily(G, class_attr):
     adjusted_homophily = my_nominator/my_deniminator
     return adjusted_homophily
 
+def normalize_inplace(G):
+    """
+    Supprime tous les nœuds de degré 0 en modifiant `G` directement.
+    """
+    nodes_to_remove = [n for n, d in G.degree() if d == 0]
+    if nodes_to_remove:
+        G.remove_nodes_from(nodes_to_remove)
 
 # Tests
-label_G = 'symbol'
-g_edge_homophily = edge_homophily(G, class_attr=label_G)
-g_node_homophily = node_homophily(G, class_attr=label_G)
-g_class_homophily = class_homophily(G, class_attr=label_G)
-g_adjusted_homophily = adjusted_homophily(G, class_attr=label_G)
+def main():
+    label_G = 'symbol'
+    normalize_inplace(G)
+    g_edge_homophily = edge_homophily(G, class_attr=label_G)
+    g_node_homophily = node_homophily(G, class_attr=label_G)
+    g_class_homophily = class_homophily(G, class_attr=label_G)
+    g_adjusted_homophily = adjusted_homophily(G, class_attr=label_G)
 
-print(f"\nGraphe edge homophily : {g_edge_homophily}")
-print(f"Graphe node homophily : {g_node_homophily}")
-print(f"Graphe class homophily : {g_class_homophily}")
-print(f"Graphe adjusted homophily : {g_adjusted_homophily}")
+    print(f"\nGraphe edge homophily : {g_edge_homophily}")
+    print(f"Graphe node homophily : {g_node_homophily}")
+    print(f"Graphe class homophily : {g_class_homophily}")
+    print(f"Graphe adjusted homophily : {g_adjusted_homophily}")
 
-plot_graph(G, class_attr=label_G)
+    plot_graph(G, class_attr=label_G)
