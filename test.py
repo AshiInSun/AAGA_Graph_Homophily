@@ -130,3 +130,4 @@ def main():
     print(f"Graphe adjusted homophily : {g_adjusted_homophily}")
 
     plot_graph(G, class_attr=label_G)
+main()
