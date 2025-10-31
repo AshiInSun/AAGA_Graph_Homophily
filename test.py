@@ -2,6 +2,8 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import random
 import numpy as np
+import graph_homophily_measures
+import experimental_comparaison
 
 #Pour lire l'article et notre code : on a V les noeuds, n le nombre de noeuds, E les arêtes.
 #Chaque v a un label y de v appartenant a {0, ... , m}
@@ -9,9 +11,10 @@ import numpy as np
 #On a N(v) l'ensemble des voisins de v i.e. les noeuds connectés à v par une arête. |N(v)| = d(v)
 #On a n(k) le nombre de noeuds de label k. D(k) la somme des dégrés des noeuds de label k.
 
+path_dataset_one = "datasets/OGB_MOLPCBA_GML"
+path_dataset_two = "datasets/OGB_CODE2_GML"
 
-
-G = nx.read_gml("datasets/AIDS_GML/91.gml")
+G = nx.read_gml("datasets/OGB_CODE2_GML/graph_10.gml")
 # Assigner des labels aléatoires (par exemple 3 classes)
 #labels = {}
 #for node in G.nodes():
@@ -34,86 +37,33 @@ def plot_graph(G, class_attr):
     plt.title("Graphe avec labels")
     plt.show()
 
-def edge_homophily(G, class_attr):
-    total_of_edges = G.number_of_edges()
-    homo_edges = 0
-    for edge in G.edges():
-        if G.nodes[edge[0]][class_attr] == G.nodes[edge[1]][class_attr]:
-            homo_edges+=1
-    edge_homophilic_measure = homo_edges / total_of_edges
-    return edge_homophilic_measure
-
-def node_homophily(G, class_attr):
-    total_of_nodes = G.number_of_nodes()
-    homo_node = 0
-    for node in G.nodes():
-        local_homo = 0
-        for neighbor in G.neighbors(node):
-            if G.nodes[neighbor][class_attr] == G.nodes[node][class_attr]:
-                local_homo+=1
-        local_homo = local_homo/G.degree(node)
-        homo_node += local_homo
-    homo_node = homo_node / total_of_nodes
-    return homo_node
-
-def somme_degres_label_k(G, k, class_attr):
-    somme = 0
-    for node in G.nodes():
-        if G.nodes[node][class_attr] == k:
-            somme += G.degree(node)
-    return somme
-
-#on peut tomber sur 0 : c'est normal (je pense).
-def class_homophily(G, class_attr):
-    m = set(nx.get_node_attributes(G, class_attr).values())
-    homophilia = 0
-    for label in m:
-
-        somme_interieur = 0
-        nk = 0
-        for v in G.nodes():
-            if G.nodes[v][class_attr] == label:
-                nk += 1
-                nb_homo_neighbor = 0
-                for neighbor in G.neighbors(v):
-                    if G.nodes[neighbor][class_attr] == label:
-                        nb_homo_neighbor += 1
-                somme_interieur += nb_homo_neighbor
-        Dk = somme_degres_label_k(G, label, class_attr)
-        somme_interieur = somme_interieur / Dk
-        nksurn = nk / G.number_of_nodes()
-        resultat_intermediaire = somme_interieur - nksurn
-        if resultat_intermediaire < 0:
-            resultat_intermediaire = 0
-        homophilia += resultat_intermediaire
-    homophilia = homophilia / (m.__len__())
-    return homophilia
-
-def adjusted_homophily(G, class_attr):
-    edje_homophily= edge_homophily(G, class_attr)
-    m = set(nx.get_node_attributes(G, class_attr).values())
-    my_term = (2*G.number_of_edges())**2
-    my_firstSum=0
-    for label in m:
-        my_firstSum+=somme_degres_label_k(G,label, class_attr)**2/my_term
-
-    my_nominator= edje_homophily-my_firstSum
-    my_deniminator = 1-my_firstSum
-
-    adjusted_homophily = my_nominator/my_deniminator
-    return adjusted_homophily
 
 
 # Tests
-label_G = 'symbol'
-g_edge_homophily = edge_homophily(G, class_attr=label_G)
-g_node_homophily = node_homophily(G, class_attr=label_G)
-g_class_homophily = class_homophily(G, class_attr=label_G)
-g_adjusted_homophily = adjusted_homophily(G, class_attr=label_G)
+def testing_one_graph():
+    label_G = 'chem'
+    experimental_comparaison.normalize_inplace(G)
+    g_edge_homophily = graph_homophily_measures.edge_homophily(G, class_attr=label_G)
+    g_node_homophily = graph_homophily_measures.node_homophily(G, class_attr=label_G)
+    g_class_homophily = graph_homophily_measures.class_homophily(G, class_attr=label_G)
+    g_adjusted_homophily = graph_homophily_measures.adjusted_homophily(G, class_attr=label_G)
 
-print(f"\nGraphe edge homophily : {g_edge_homophily}")
-print(f"Graphe node homophily : {g_node_homophily}")
-print(f"Graphe class homophily : {g_class_homophily}")
-print(f"Graphe adjusted homophily : {g_adjusted_homophily}")
+    print(f"\nGraphe edge homophily : {g_edge_homophily}")
+    print(f"Graphe node homophily : {g_node_homophily}")
+    print(f"Graphe class homophily : {g_class_homophily}")
+    print(f"Graphe adjusted homophily : {g_adjusted_homophily}")
 
-plot_graph(G, class_attr=label_G)
+    plot_graph(G, class_attr=label_G)
+
+def main():
+    print("Starting the test\n")
+    print("Testing MOLPCBA from OGB, molecular graph, 26 node and 28 edge per graph on average.")
+    print("Results :\n")
+    experimental_comparaison.experimental_comparaison(path_dataset_one, label_G="chem")
+    print("\n")
+    print("Testing CODE2 from OGB, AST graph, 125 node and 124 edge per graph on average.")
+    print("Results :\n")
+    experimental_comparaison.experimental_comparaison(path_dataset_two, label_G="chem")
+    print("Ending the test")
+
+main()
