@@ -88,4 +88,3 @@ def experimental_comparaison(path, label_G):
     print(f"Accord entre node et class homophily: {node_class_agreement}")
     print(f"Accord entre node et adjusted homophily: {node_adjusted_agreement}")
     print(f"Accord entre class et adjusted homophily: {class_adjusted_agreement}")
-
