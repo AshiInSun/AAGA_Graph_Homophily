@@ -1,28 +1,10 @@
 import networkx as nx
 import matplotlib.pyplot as plt
-import random
 import numpy as np
 import graph_homophily_measures
 import experimental_comparaison
-
-#Pour lire l'article et notre code : on a V les noeuds, n le nombre de noeuds, E les arêtes.
-#Chaque v a un label y de v appartenant a {0, ... , m}
-#On a d(v) le dégré d'un noeud i.e. le nombre d'arêtes connectées à v.
-#On a N(v) l'ensemble des voisins de v i.e. les noeuds connectés à v par une arête. |N(v)| = d(v)
-#On a n(k) le nombre de noeuds de label k. D(k) la somme des dégrés des noeuds de label k.
-
-path_dataset_one = "datasets/OGB_MOLPCBA_GML"
-path_dataset_two = "datasets/OGB_CODE2_GML"
-
-G = nx.read_gml("datasets/OGB_CODE2_GML/graph_10.gml")
-# Assigner des labels aléatoires (par exemple 3 classes)
-#labels = {}
-#for node in G.nodes():
-#    labels[node] = random.randint(0, 2)  # Classes 0, 1, 2
-#nx.set_node_attributes(G, labels, 'label')
-
-#print(f"\nGraphe avec labels : {G.number_of_nodes()} nœuds, {G.number_of_edges()} arêtes")
-#print(f"Distribution des labels : {[list(labels.values()).count(i) for i in range(3)]}")
+import argparse
+import os
 
 def plot_graph(G, class_attr):
     pos = nx.spring_layout(G)
@@ -31,39 +13,55 @@ def plot_graph(G, class_attr):
     colors = plt.cm.rainbow(np.linspace(0, 1, len(unique_labels)))
     color_map = {label: colors[i] for i, label in enumerate(unique_labels)}
     node_colors = [color_map[node_labels[node]] for node in G.nodes()]
-    
+
     plt.figure(figsize=(8, 6))
     nx.draw(G, pos, with_labels=True, node_color=node_colors, edge_color='gray', node_size=500, font_color='white')
     plt.title("Graphe avec labels")
     plt.show()
 
 
-
-# Tests
-def testing_one_graph():
-    label_G = 'chem'
+def testing_one_graph(graph_file, class_attr="chem"):
+    """
+    Test sur un seul graphe pour visualisation
+    """
+    G = nx.read_gml(graph_file)
     experimental_comparaison.normalize_inplace(G)
-    g_edge_homophily = graph_homophily_measures.edge_homophily(G, class_attr=label_G)
-    g_node_homophily = graph_homophily_measures.node_homophily(G, class_attr=label_G)
-    g_class_homophily = graph_homophily_measures.class_homophily(G, class_attr=label_G)
-    g_adjusted_homophily = graph_homophily_measures.adjusted_homophily(G, class_attr=label_G)
+    g_edge_homophily = graph_homophily_measures.edge_homophily(G, class_attr=class_attr)
+    g_node_homophily = graph_homophily_measures.node_homophily(G, class_attr=class_attr)
+    g_class_homophily = graph_homophily_measures.class_homophily(G, class_attr=class_attr)
+    g_adjusted_homophily = graph_homophily_measures.adjusted_homophily(G, class_attr=class_attr)
 
     print(f"\nGraphe edge homophily : {g_edge_homophily}")
     print(f"Graphe node homophily : {g_node_homophily}")
     print(f"Graphe class homophily : {g_class_homophily}")
     print(f"Graphe adjusted homophily : {g_adjusted_homophily}")
 
-    plot_graph(G, class_attr=label_G)
+    plot_graph(G, class_attr=class_attr)
+
 
 def main():
-    print("Starting the test\n")
-    print("Testing MOLPCBA from OGB, molecular graph, 26 node and 28 edge per graph on average.")
-    print("Results :\n")
-    experimental_comparaison.experimental_comparaison(path_dataset_one, label_G="chem")
-    print("\n")
-    print("Testing CODE2 from OGB, AST graph, 125 node and 124 edge per graph on average.")
-    print("Results :\n")
-    experimental_comparaison.experimental_comparaison(path_dataset_two, label_G="chem")
-    print("Ending the test")
+    parser = argparse.ArgumentParser(description="Lancer les expériences d’homophilie sur un dossier de graphes GML")
+    parser.add_argument("--dataset", type=str, required=True, help="Chemin vers le dossier contenant les fichiers .gml")
+    parser.add_argument("--plot_one_graph", type=str, default=None, help="Optionnel : chemin d'un graphe GML à visualiser")
+    args = parser.parse_args()
 
-main()
+    dataset_path = args.dataset
+
+    if not os.path.isdir(dataset_path):
+        print(f" Le dossier {dataset_path} n'existe pas.")
+        return
+
+    print(f" Lancement des expériences sur le dataset : {dataset_path}\n")
+    experimental_comparaison.experimental_comparaison(dataset_path, label_G="chem")
+
+    # Optionnel : visualiser un graphe spécifique
+    if args.plot_one_graph:
+        if os.path.isfile(args.plot_one_graph):
+            print(f"\n📊 Visualisation du graphe : {args.plot_one_graph}")
+            testing_one_graph(args.plot_one_graph, class_attr="chem")
+        else:
+            print(f" Fichier {args.plot_one_graph} introuvable.")
+
+
+if __name__ == "__main__":
+    main()
