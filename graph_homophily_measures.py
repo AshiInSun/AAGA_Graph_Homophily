@@ -1,5 +1,5 @@
 import networkx as nx
-
+import numpy as np
 
 def edge_homophily(G, class_attr):
     total_of_edges = G.number_of_edges()
@@ -73,3 +73,34 @@ def adjusted_homophily(G, class_attr):
 
     adjusted_homophily = my_nominator/my_deniminator
     return adjusted_homophily
+
+def compute_cii(G, class_atr):
+    """
+    Calcule uniquement les cii normalisés : (définition 3, page 5 de l'article)
+    cii = (# arêtes intra-classe i) / |E|
+    Retourne un array des cii dans un ordre déterminé par les classes triées.
+    """
+
+    E = G.number_of_edges()
+    classes = sorted(set(nx.get_node_attributes(G, class_atr).values()))
+    cii = dict.fromkeys(classes, 0)
+
+    for u, v in G.edges():
+        cu = G.nodes[u][class_atr]
+        cv = G.nodes[v][class_atr]
+        if cu == cv:
+            cii[cu] += 1
+
+    # normalisation : diviser par |E|
+    cii_vec = np.array([cii[c] / E for c in classes], dtype=float)
+    return cii_vec
+
+
+def unbiased_homophily(G, class_atr):
+    cii_vec = compute_cii(G, class_atr)
+
+    S = np.sum(np.sqrt(cii_vec))
+    numerator = S**2 - 1
+    denominator = S**2 + 1 - 2 * np.sum(cii_vec)
+
+    return numerator / denominator

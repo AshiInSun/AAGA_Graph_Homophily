@@ -1,13 +1,13 @@
 import os
 import ogb
 import networkx as nx
+import torch
 from torch_geometric.utils import to_networkx
 from tqdm import tqdm
 
-import test
-from test import normalize_inplace
+import tests
+from tests import normalize_inplace
 
-import torch
 from torch.serialization import add_safe_globals
 from torch_geometric.data.data import DataEdgeAttr, DataTensorAttr
 from torch_geometric.data.storage import GlobalStorage
@@ -24,18 +24,18 @@ path_dataset = "../datasets/Mutagenicity_GML"
 
 
 def retrieve_ogb_molpcba_dataset():
-    print("🔹 Téléchargement / chargement du dataset OGB (ogbg-code2)...")
+    print("Téléchargement / chargement du dataset OGB (ogbg-code2)...")
     dataset = PygGraphPropPredDataset(name='ogbg-code2', root='data/ogb')
-    print("✅ Dataset chargé avec succès !")
-    print(f"📊 Nombre total de graphes : {len(dataset)}")
-    print(f"🧩 Exemple de graphe : {dataset[0]}")
+    print("Dataset chargé avec succès !")
+    print(f"Nombre total de graphes : {len(dataset)}")
+    print(f"Exemple de graphe : {dataset[0]}")
     return dataset
 
 
 def conversion(dataset, output_dir="datasets/OGB_CODE2_GML", max_graphs=2000):
     os.makedirs(output_dir, exist_ok=True)
-    print(f"\n🚀 Début de la conversion des {max_graphs} premiers graphes du dataset OGB en .gml...")
-    print(f"📁 Les fichiers seront sauvegardés dans : {output_dir}")
+    print(f"\nDébut de la conversion des {max_graphs} premiers graphes du dataset OGB en .gml...")
+    print(f"Les fichiers seront sauvegardés dans : {output_dir}")
 
     num_converted = 0
     num_failed = 0
@@ -47,7 +47,7 @@ def conversion(dataset, output_dir="datasets/OGB_CODE2_GML", max_graphs=2000):
 
             # Vérification basique
             if G.number_of_nodes() == 0:
-                print(f"⚠️ Graphe {i} vide, ignoré.")
+                print(f"Graphe {i} vide, ignoré.")
                 num_failed += 1
                 continue
 
@@ -64,15 +64,15 @@ def conversion(dataset, output_dir="datasets/OGB_CODE2_GML", max_graphs=2000):
 
             # Petits checkpoints de progression
             if i % 100 == 0 and i > 0:
-                print(f"🧩 {i} graphes traités, {num_converted} sauvegardés avec succès...")
+                print(f"{i} graphes traités, {num_converted} sauvegardés avec succès...")
 
         except Exception as e:
-            print(f"❌ Erreur lors du traitement du graphe {i} : {e}")
+            print(f"Erreur lors du traitement du graphe {i} : {e}")
             num_failed += 1
 
-    print(f"\n✅ Conversion terminée !")
-    print(f"📦 {num_converted} graphes sauvegardés avec succès dans : {output_dir}")
-    print(f"⚠️ {num_failed} graphes n'ont pas pu être convertis.\n")
+    print(f"\nConversion terminée !")
+    print(f"{num_converted} graphes sauvegardés avec succès dans : {output_dir}")
+    print(f"{num_failed} graphes n'ont pas pu être convertis.\n")
 
 
 def main_retrieve():
@@ -83,4 +83,4 @@ def main_retrieve():
 
 
 # Pour exécuter :
-#main_retrieve()
+main_retrieve()

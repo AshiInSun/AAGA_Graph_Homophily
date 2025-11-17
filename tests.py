@@ -47,11 +47,13 @@ def testing_one_graph():
     g_node_homophily = graph_homophily_measures.node_homophily(G, class_attr=label_G)
     g_class_homophily = graph_homophily_measures.class_homophily(G, class_attr=label_G)
     g_adjusted_homophily = graph_homophily_measures.adjusted_homophily(G, class_attr=label_G)
+    g_unbiased_homophily = graph_homophily_measures.unbiased_homophily(G, class_attr=label_G)
 
-    print(f"\nGraphe edge homophily : {g_edge_homophily}")
-    print(f"Graphe node homophily : {g_node_homophily}")
-    print(f"Graphe class homophily : {g_class_homophily}")
-    print(f"Graphe adjusted homophily : {g_adjusted_homophily}")
+    print(f"\nGraph edge homophily : {g_edge_homophily}")
+    print(f"Graph node homophily : {g_node_homophily}")
+    print(f"Graph class homophily : {g_class_homophily}")
+    print(f"Graph adjusted homophily : {g_adjusted_homophily}")
+    print(f"Graph unbiased homophily : {g_unbiased_homophily}")
 
     plot_graph(G, class_attr=label_G)
 
