@@ -71,6 +71,6 @@ def main():
     print("\n")
     print("Testing PROTEIN.")
     print("Results :\n")
-    experimental_comparaison.experimental_comparaison("datasets/Mutagenicity_GML", label_G="chem")
+    experimental_comparaison.experimental_comparaison("datasets/Protein_GML", label_G="chem")
     print("\n")
 main()
