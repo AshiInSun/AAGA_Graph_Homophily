@@ -3,11 +3,11 @@ import ogb
 import networkx as nx
 
 import torch
-from torch_geometric.utils import to_networkx
+from torch_geometric.utils import to_networkx, from_networkx
 from tqdm import tqdm
 
-import tests
-from tests import normalize_inplace
+from experimental_comparaison import normalize_inplace
+from torch_geometric.datasets import TUDataset
 
 from torch.serialization import add_safe_globals
 from torch_geometric.data.data import DataEdgeAttr, DataTensorAttr
@@ -25,6 +25,8 @@ add_safe_globals(safe_classes)
 max_graphs = 2000
 output_dir = "../datasets/OGB_MOLPCBA_GML"
 output_dir2 = "../datasets/OGB_CODE2_GML"
+output_dir3 = "../datasets/TUDNCI1_GML"
+output_dir4 = "../datasets/TUDIMDBBINARY_GML"
 path_dataset = "../datasets/Mutagenicity_GML"
 
 
@@ -34,6 +36,20 @@ def retrieve_ogb_molpcba_dataset(nameds):
     print("Dataset chargé avec succès !")
     print(f"Nombre total de graphes : {len(dataset)}")
     print(f"Exemple de graphe : {dataset[0]}")
+    return dataset
+
+def retrieve_tudataset():
+    print("🔹 Téléchargement / chargement du dataset TUD NCI1...")
+    dataset = TUDataset(root="data/COLLAB", name="COLLAB")
+    print("Dataset chargé avec succès !")
+    print(f"Nombre total de graphes : {len(dataset)}")
+    return dataset
+
+def retrieve_tudatasetbin():
+    print("🔹 Téléchargement / chargement du dataset TUD IMDB-BINARY...")
+    dataset = TUDataset(root="data/REDDIT-BINARY", name="REDDIT-BINARY")
+    print("Dataset chargé avec succès !")
+    print(f"Nombre total de graphes : {len(dataset)}")
     return dataset
 
 def retrieve_protein_dataset(path: str = '../datasets/Protein_GML',
@@ -138,12 +154,17 @@ def code2_retrieve():
 def molpcba_retrieve():
     dataset = retrieve_ogb_molpcba_dataset("ogbg-molpcba")
     conversion(dataset, output_dir=output_dir, max_graphs=max_graphs)
+def tud_nci1_retrieve():
+    dataset = retrieve_tudataset()
+    conversion(dataset, output_dir=output_dir3, max_graphs=max_graphs)
+def tud_imdbbinary_retrieve():
+    dataset = retrieve_tudatasetbin()
+    conversion(dataset, output_dir=output_dir4, max_graphs=max_graphs)
 
 
 def main_retrieve():
     print("=== DÉMARRAGE DU PIPELINE ===")
-    molpcba_retrieve()
-    code2_retrieve()
+    tud_nci1_retrieve()
     print("=== FIN DU PIPELINE ===")
 
 
