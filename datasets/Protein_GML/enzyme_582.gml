@@ -2,128 +2,128 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 8
     sequence "KLKPLLEA"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 16
     sequence "SFDEYSEPLLTFLEAL"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 14
     sequence "CGGLNIAIAADKYC"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 11
     sequence "SYVVDKLMEVF"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 0
     aaLength 9
     sequence "GFTLLRENL"
+    chem 0
   ]
   node [
     id 5
     label "6"
-    type 0
     aaLength 12
     sequence "GPEEYELAKMLT"
+    chem 0
   ]
   node [
     id 6
     label "7"
-    type 0
     aaLength 7
     sequence "FQNILAK"
+    chem 0
   ]
   node [
     id 7
     label "8"
-    type 0
     aaLength 12
     sequence "LPEFQLWQIENY"
+    chem 0
   ]
   node [
     id 8
     label "9"
-    type 0
     aaLength 21
     sequence "KLQLTKTKEIAEILQEVADTY"
+    chem 0
   ]
   node [
     id 9
     label "10"
-    type 1
     aaLength 6
     sequence "AHFVLI"
+    chem 1
   ]
   node [
     id 10
     label "11"
-    type 1
     aaLength 5
     sequence "KVTAL"
+    chem 1
   ]
   node [
     id 11
     label "12"
-    type 1
     aaLength 16
     sequence "SFDEYSEPLLTFLEAL"
+    chem 1
   ]
   node [
     id 12
     label "13"
-    type 1
     aaLength 9
     sequence "KIAAAVFHN"
+    chem 1
   ]
   node [
     id 13
     label "14"
-    type 1
     aaLength 6
     sequence "KKIYVW"
+    chem 1
   ]
   node [
     id 14
     label "15"
-    type 1
     aaLength 5
     sequence "KVYKV"
+    chem 1
   ]
   node [
     id 15
     label "16"
-    type 1
     aaLength 7
     sequence "TYFTYTK"
+    chem 1
   ]
   node [
     id 16
     label "17"
-    type 1
     aaLength 7
     sequence "KEITGLK"
+    chem 1
   ]
   node [
     id 17
     label "18"
-    type 1
     aaLength 3
     sequence "GSL"
+    chem 1
   ]
   edge [
     source 0

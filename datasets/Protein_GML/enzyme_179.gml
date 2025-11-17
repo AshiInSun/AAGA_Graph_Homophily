@@ -2,282 +2,254 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 13
     sequence "KSLGELIHTLNGA"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 7
     sequence "DFARQKL"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 7
     sequence "AMIKDIG"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 5
     sequence "ERRHV"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 0
     aaLength 13
     sequence "ELIGQKVAHALAE"
+    chem 0
   ]
   node [
     id 5
     label "6"
-    type 0
     aaLength 5
     sequence "DEREA"
+    chem 0
   ]
   node [
     id 6
     label "7"
-    type 0
     aaLength 13
     sequence "EKVVFEQTKAIAD"
+    chem 0
   ]
   node [
     id 7
     label "8"
-    type 0
     aaLength 18
     sequence "ATPQQAQEVHEKLRGWLK"
+    chem 0
   ]
   node [
     id 8
     label "9"
-    type 0
     aaLength 6
     sequence "AVAQST"
+    chem 0
   ]
   node [
     id 9
     label "10"
-    type 0
     aaLength 5
     sequence "KELAS"
+    chem 0
   ]
   node [
     id 10
     label "11"
-    type 0
     aaLength 5
     sequence "VDIIN"
+    chem 0
   ]
   node [
     id 11
     label "12"
-    type 0
     aaLength 13
     sequence "KSLGELIHTLNGA"
+    chem 0
   ]
   node [
     id 12
     label "13"
-    type 0
     aaLength 7
     sequence "DFARQKL"
+    chem 0
   ]
   node [
     id 13
     label "14"
-    type 0
     aaLength 7
     sequence "AMIKDIG"
+    chem 0
   ]
   node [
     id 14
     label "15"
-    type 0
     aaLength 5
     sequence "ERRHV"
+    chem 0
   ]
   node [
     id 15
     label "16"
-    type 0
     aaLength 13
     sequence "ELIGQKVAHALAE"
+    chem 0
   ]
   node [
     id 16
     label "17"
-    type 0
     aaLength 5
     sequence "DEREA"
+    chem 0
   ]
   node [
     id 17
     label "18"
-    type 0
     aaLength 13
     sequence "EKVVFEQTKAIAD"
+    chem 0
   ]
   node [
     id 18
     label "19"
-    type 0
     aaLength 18
     sequence "ATPQQAQEVHEKLRGWLK"
+    chem 0
   ]
   node [
     id 19
     label "20"
-    type 0
     aaLength 6
     sequence "AVAQST"
+    chem 0
   ]
   node [
     id 20
     label "21"
-    type 0
     aaLength 5
     sequence "KELAS"
+    chem 0
   ]
   node [
     id 21
     label "22"
-    type 0
     aaLength 5
     sequence "VDIIN"
+    chem 0
   ]
   node [
     id 22
     label "23"
-    type 1
     aaLength 6
     sequence "FVGGNW"
+    chem 1
   ]
   node [
     id 23
-    label "24"
-    type 1
-    aaLength 6
-    sequence "EVVCGA"
+    label "26"
+    aaLength 4
+    sequence "VILG"
+    chem 1
   ]
   node [
     id 24
-    label "25"
-    type 1
-    aaLength 4
-    sequence "VAAQ"
+    label "27"
+    aaLength 6
+    sequence "VIACIG"
+    chem 1
   ]
   node [
     id 25
-    label "26"
-    type 1
-    aaLength 4
-    sequence "VILG"
+    label "28"
+    aaLength 5
+    sequence "VLAYD"
+    chem 1
   ]
   node [
     id 26
-    label "27"
-    type 1
-    aaLength 6
-    sequence "VIACIG"
+    label "29"
+    aaLength -5
+    sequence "IYGGSVTGGNCKELASQHDVDGFLVGGASLKPEFVDI"
+    chem 1
   ]
   node [
     id 27
-    label "28"
-    type 1
-    aaLength 5
-    sequence "VLAYD"
+    label "30"
+    aaLength 6
+    sequence "DGFLVG"
+    chem 1
   ]
   node [
     id 28
-    label "29"
-    type 1
-    aaLength -5
-    sequence "IYGGSVTGGNCKELASQHDVDGFLVGGASLKPEFVDI"
+    label "31"
+    aaLength 6
+    sequence "FVGGNW"
+    chem 1
   ]
   node [
     id 29
-    label "30"
-    type 1
+    label "32"
     aaLength 6
-    sequence "DGFLVG"
+    sequence "FVGGNW"
+    chem 1
   ]
   node [
     id 30
-    label "31"
-    type 1
-    aaLength 6
-    sequence "FVGGNW"
+    label "35"
+    aaLength 4
+    sequence "VILG"
+    chem 1
   ]
   node [
     id 31
-    label "32"
-    type 1
+    label "36"
     aaLength 6
-    sequence "FVGGNW"
+    sequence "VIACIG"
+    chem 1
   ]
   node [
     id 32
-    label "33"
-    type 1
-    aaLength 6
-    sequence "EVVCGA"
+    label "37"
+    aaLength 5
+    sequence "VLAYD"
+    chem 1
   ]
   node [
     id 33
-    label "34"
-    type 1
-    aaLength 4
-    sequence "VAAQ"
+    label "38"
+    aaLength -5
+    sequence "IYGGSVTGGNCKELASQHDVDGFLVGGASLKPEFVDI"
+    chem 1
   ]
   node [
     id 34
-    label "35"
-    type 1
-    aaLength 4
-    sequence "VILG"
+    label "39"
+    aaLength 6
+    sequence "DGFLVG"
+    chem 1
   ]
   node [
     id 35
-    label "36"
-    type 1
-    aaLength 6
-    sequence "VIACIG"
-  ]
-  node [
-    id 36
-    label "37"
-    type 1
-    aaLength 5
-    sequence "VLAYD"
-  ]
-  node [
-    id 37
-    label "38"
-    type 1
-    aaLength -5
-    sequence "IYGGSVTGGNCKELASQHDVDGFLVGGASLKPEFVDI"
-  ]
-  node [
-    id 38
-    label "39"
-    type 1
-    aaLength 6
-    sequence "DGFLVG"
-  ]
-  node [
-    id 39
     label "40"
-    type 1
     aaLength 6
     sequence "FVGGNW"
+    chem 1
   ]
   edge [
     source 0
@@ -331,22 +303,22 @@ graph [
   ]
   edge [
     source 4
-    target 25
+    target 23
     frequency 1
   ]
   edge [
     source 4
-    target 26
+    target 24
     frequency 1
   ]
   edge [
     source 4
-    target 34
+    target 30
     frequency 1
   ]
   edge [
     source 4
-    target 35
+    target 31
     frequency 1
   ]
   edge [
@@ -366,7 +338,7 @@ graph [
   ]
   edge [
     source 6
-    target 26
+    target 24
     frequency 1
   ]
   edge [
@@ -391,7 +363,7 @@ graph [
   ]
   edge [
     source 8
-    target 28
+    target 26
     frequency 1
   ]
   edge [
@@ -401,7 +373,7 @@ graph [
   ]
   edge [
     source 10
-    target 29
+    target 27
     frequency 1
   ]
   edge [
@@ -431,12 +403,12 @@ graph [
   ]
   edge [
     source 14
-    target 25
+    target 23
     frequency 1
   ]
   edge [
     source 14
-    target 34
+    target 30
     frequency 1
   ]
   edge [
@@ -446,32 +418,32 @@ graph [
   ]
   edge [
     source 16
-    target 26
+    target 24
     frequency 1
   ]
   edge [
     source 16
-    target 35
+    target 31
     frequency 1
   ]
   edge [
     source 17
-    target 26
+    target 24
     frequency 1
   ]
   edge [
     source 17
-    target 27
+    target 25
     frequency 1
   ]
   edge [
     source 17
-    target 36
+    target 32
     frequency 1
   ]
   edge [
     source 17
-    target 35
+    target 31
     frequency 1
   ]
   edge [
@@ -481,12 +453,12 @@ graph [
   ]
   edge [
     source 18
-    target 27
+    target 25
     frequency 1
   ]
   edge [
     source 18
-    target 36
+    target 32
     frequency 1
   ]
   edge [
@@ -496,7 +468,7 @@ graph [
   ]
   edge [
     source 19
-    target 28
+    target 26
     frequency 1
   ]
   edge [
@@ -506,72 +478,52 @@ graph [
   ]
   edge [
     source 20
-    target 29
+    target 27
     frequency 1
   ]
   edge [
     source 22
-    target 30
+    target 28
     frequency 1
   ]
   edge [
     source 22
-    target 39
+    target 35
     frequency 1
   ]
   edge [
-    source 23
-    target 24
+    source 26
+    target 27
     frequency 1
   ]
   edge [
-    source 23
+    source 26
+    target 34
+    frequency 1
+  ]
+  edge [
+    source 27
     target 33
     frequency 1
   ]
   edge [
-    source 24
-    target 32
-    frequency 1
-  ]
-  edge [
     source 28
     target 29
     frequency 1
   ]
   edge [
     source 28
-    target 38
+    target 35
     frequency 1
   ]
   edge [
     source 29
-    target 37
+    target 35
     frequency 1
   ]
   edge [
-    source 30
-    target 31
-    frequency 1
-  ]
-  edge [
-    source 30
-    target 39
-    frequency 1
-  ]
-  edge [
-    source 31
-    target 39
-    frequency 1
-  ]
-  edge [
-    source 32
-    target 33
-    frequency 1
-  ]
-  edge [
-    source 37
-    target 38
+    source 33
+    target 34
     frequency 1
   ]
 ]

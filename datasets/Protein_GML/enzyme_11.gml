@@ -2,30 +2,30 @@ graph [
   node [
     id 0
     label "1"
-    type 2
     aaLength 3
     sequence "KGT"
+    chem 2
   ]
   node [
     id 1
     label "2"
-    type 2
     aaLength 4
     sequence "CPKC"
+    chem 2
   ]
   node [
     id 2
     label "3"
-    type 2
     aaLength 4
     sequence "QYGD"
+    chem 2
   ]
   node [
     id 3
     label "4"
-    type 2
     aaLength 4
     sequence "CEVC"
+    chem 2
   ]
   edge [
     source 0

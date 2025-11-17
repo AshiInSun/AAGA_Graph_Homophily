@@ -42,23 +42,24 @@ def plot_graph(G, class_attr):
 # Tests
 def testing_one_graph():
     label_G = 'chem'
-    G = nx.read_gml("datasets/OGB_CODE2_GML/graph_10.gml")
+    G = nx.read_gml("datasets/Protein_GML/enzyme_97.gml")
     experimental_comparaison.normalize_inplace(G)
     g_edge_homophily = graph_homophily_measures.edge_homophily(G, class_attr=label_G)
     g_node_homophily = graph_homophily_measures.node_homophily(G, class_attr=label_G)
     g_class_homophily = graph_homophily_measures.class_homophily(G, class_attr=label_G)
     g_adjusted_homophily = graph_homophily_measures.adjusted_homophily(G, class_attr=label_G)
-    g_unbiased_homophily = graph_homophily_measures.unbiased_homophily(G, class_attr=label_G)
+    #g_unbiased_homophily = graph_homophily_measures.unbiased_homophily(G, class_attr=label_G)
 
     print(f"\nGraph edge homophily : {g_edge_homophily}")
     print(f"Graph node homophily : {g_node_homophily}")
     print(f"Graph class homophily : {g_class_homophily}")
     print(f"Graph adjusted homophily : {g_adjusted_homophily}")
-    print(f"Graph unbiased homophily : {g_unbiased_homophily}")
+    #print(f"Graph unbiased homophily : {g_unbiased_homophily}")
 
     plot_graph(G, class_attr=label_G)
 
 def main():
+    testing_one_graph()
     print("Starting the test\n")
     print("Testing MOLPCBA from OGB, molecular graph, 26 node and 28 edge per graph on average.")
     print("Results :\n")
@@ -68,9 +69,8 @@ def main():
     print("Results :\n")
     experimental_comparaison.experimental_comparaison(path_dataset_two, label_G="chem")
     print("\n")
-    print("Testing PROT from OGB, AST graph, 125 node and 124 edge per graph on average.")
+    print("Testing PROTEIN.")
     print("Results :\n")
-    experimental_comparaison.experimental_comparaison("datasets/Protein_GML", label_G="type")
-    print("Ending the test")
-
+    experimental_comparaison.experimental_comparaison("datasets/Mutagenicity_GML", label_G="chem")
+    print("\n")
 main()

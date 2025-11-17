@@ -2,86 +2,86 @@ graph [
   node [
     id 0
     label "1"
-    type 1
     aaLength 3
     sequence "QKS"
+    chem 1
   ]
   node [
     id 1
     label "2"
-    type 1
     aaLength 3
     sequence "WRK"
+    chem 1
   ]
   node [
     id 2
     label "3"
-    type 1
     aaLength 4
     sequence "SNCS"
+    chem 1
   ]
   node [
     id 3
     label "4"
-    type 1
     aaLength 8
     sequence "HDFILEDA"
+    chem 1
   ]
   node [
     id 4
     label "5"
-    type 1
     aaLength 8
     sequence "LETVCHDP"
+    chem 1
   ]
   node [
     id 5
     label "6"
-    type 1
     aaLength 2
     sequence "NI"
+    chem 1
   ]
   node [
     id 6
     label "7"
-    type 1
     aaLength 4
     sequence "SNCS"
+    chem 1
   ]
   node [
     id 7
     label "8"
-    type 1
     aaLength 8
     sequence "HDFILEDA"
+    chem 1
   ]
   node [
     id 8
     label "9"
-    type 1
     aaLength 8
     sequence "LETVCHDP"
+    chem 1
   ]
   node [
     id 9
     label "10"
-    type 1
     aaLength 2
     sequence "EE"
+    chem 1
   ]
   node [
     id 10
     label "11"
-    type 1
     aaLength 2
     sequence "QE"
+    chem 1
   ]
   node [
     id 11
     label "12"
-    type 1
     aaLength 2
     sequence "vanDerWaals"
+    chem 1
   ]
   edge [
     source 0

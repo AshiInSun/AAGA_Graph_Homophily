@@ -2,149 +2,149 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 21
     sequence "EQESVKEFLAKAKEDFLKKWE"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 6
     sequence "KQKVVK"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 13
     sequence "IEHTLNEKRILQA"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 8
     sequence "MFSHLRRI"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 0
     aaLength 20
     sequence "EPHARFYAAQIVLTFEYLHS"
+    chem 0
   ]
   node [
     id 5
     label "6"
-    type 0
     aaLength 16
     sequence "AVDWWALGVLIYEMAA"
+    chem 0
   ]
   node [
     id 6
     label "7"
-    type 0
     aaLength 10
     sequence "PIQIYEKIVS"
+    chem 0
   ]
   node [
     id 7
     label "8"
-    type 0
     aaLength 10
     sequence "SDLKDLLRNL"
+    chem 0
   ]
   node [
     id 8
     label "9"
-    type 0
     aaLength 4
     sequence "NDIK"
+    chem 0
   ]
   node [
     id 9
     label "10"
-    type 0
     aaLength 5
     sequence "KWFAT"
+    chem 0
   ]
   node [
     id 10
     label "11"
-    type 0
     aaLength 6
     sequence "WIAIYQ"
+    chem 0
   ]
   node [
     id 11
     label "12"
-    type 0
     aaLength 7
     sequence "FIASGRT"
+    chem 0
   ]
   node [
     id 12
     label "13"
-    type 1
     aaLength 9
     sequence "FERIKTLGT"
+    chem 1
   ]
   node [
     id 13
     label "14"
-    type 1
     aaLength 8
     sequence "GRVMLVKH"
+    chem 1
   ]
   node [
     id 14
     label "15"
-    type 1
     aaLength 8
     sequence "HFAMKILD"
+    chem 1
   ]
   node [
     id 15
     label "16"
-    type 1
     aaLength 7
     sequence "NLYMVME"
+    chem 1
   ]
   node [
     id 16
     label "17"
-    type 1
     aaLength 6
     sequence "LEYSFK"
+    chem 1
   ]
   node [
     id 17
     label "18"
-    type 1
     aaLength 2
     sequence "LI"
+    chem 1
   ]
   node [
     id 18
     label "19"
-    type 1
     aaLength 3
     sequence "LLI"
+    chem 1
   ]
   node [
     id 19
     label "20"
-    type 1
     aaLength 3
     sequence "IQV"
+    chem 1
   ]
   node [
     id 20
     label "21"
-    type 1
     aaLength 2
     sequence "KR"
+    chem 1
   ]
   edge [
     source 0

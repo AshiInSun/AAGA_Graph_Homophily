@@ -2,128 +2,128 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 19
     sequence "ERNKLARQIIDTCLEMTRL"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 5
     sequence "PYEKL"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 5
     sequence "TESHI"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 12
     sequence "QWRFHMAAYQSR"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 0
     aaLength 11
     sequence "AVHCTAVSILN"
+    chem 0
   ]
   node [
     id 5
     label "6"
-    type 0
     aaLength 8
     sequence "HYMIAAAG"
+    chem 0
   ]
   node [
     id 6
     label "7"
-    type 0
     aaLength 12
     sequence "TRELSEHVALAL"
+    chem 0
   ]
   node [
     id 7
     label "8"
-    type 0
     aaLength 24
     sequence "NLEKALWLAHEVEVLAQLYLTTLA"
+    chem 0
   ]
   node [
     id 8
     label "9"
-    type 0
     aaLength 12
     sequence "SDEEIAVVLEKF"
+    chem 0
   ]
   node [
     id 9
     label "10"
-    type 1
     aaLength 3
     sequence "VFI"
+    chem 1
   ]
   node [
     id 10
     label "11"
-    type 1
     aaLength 4
     sequence "GMLI"
+    chem 1
   ]
   node [
     id 11
     label "12"
-    type 1
     aaLength 6
     sequence "NVSVRY"
+    chem 1
   ]
   node [
     id 12
     label "13"
-    type 1
     aaLength 5
     sequence "AVVHN"
+    chem 1
   ]
   node [
     id 13
     label "14"
-    type 1
     aaLength 6
     sequence "GLIACE"
+    chem 1
   ]
   node [
     id 14
     label "15"
-    type 1
     aaLength 4
     sequence "ATLL"
+    chem 1
   ]
   node [
     id 15
     label "16"
-    type 1
     aaLength 2
     sequence "CA"
+    chem 1
   ]
   node [
     id 16
     label "17"
-    type 1
     aaLength 2
     sequence "IP"
+    chem 1
   ]
   node [
     id 17
     label "18"
-    type 1
     aaLength 2
     sequence "SI"
+    chem 1
   ]
   edge [
     source 0

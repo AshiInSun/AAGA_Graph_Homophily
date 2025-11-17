@@ -2,86 +2,86 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 7
     sequence "KACGLLG"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 6
     sequence "KLTQFF"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 7
     sequence "SDVVEAL"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 1
     aaLength 4
     sequence "ILVA"
+    chem 1
   ]
   node [
     id 4
     label "5"
-    type 1
     aaLength 6
     sequence "AIFTVD"
+    chem 1
   ]
   node [
     id 5
     label "6"
-    type 1
     aaLength 8
     sequence "CCVVVLEP"
+    chem 1
   ]
   node [
     id 6
     label "7"
-    type 1
     aaLength 4
     sequence "IPVS"
+    chem 1
   ]
   node [
     id 7
     label "8"
-    type 1
     aaLength 3
     sequence "VDI"
+    chem 1
   ]
   node [
     id 8
     label "9"
-    type 1
     aaLength 4
     sequence "ILVA"
+    chem 1
   ]
   node [
     id 9
     label "10"
-    type 1
     aaLength 6
     sequence "AIFTVD"
+    chem 1
   ]
   node [
     id 10
     label "11"
-    type 1
     aaLength 8
     sequence "CCVVVLEP"
+    chem 1
   ]
   node [
     id 11
     label "12"
-    type 1
     aaLength 2
     sequence "MK"
+    chem 1
   ]
   edge [
     source 0

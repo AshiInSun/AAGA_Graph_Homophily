@@ -2,72 +2,72 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 15
     sequence "SSLLLKKQLADMRRV"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 5
     sequence "DYPQK"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 5
     sequence "ISILH"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 15
     sequence "TVETILLSVISMLTD"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 0
     aaLength 10
     sequence "NVDAAKMQRE"
+    chem 0
   ]
   node [
     id 5
     label "6"
-    type 0
     aaLength 17
     sequence "NYAEFKKKVAQCVRRSQ"
+    chem 0
   ]
   node [
     id 6
     label "7"
-    type 1
     aaLength 5
     sequence "FSAGL"
+    chem 1
   ]
   node [
     id 7
     label "8"
-    type 1
     aaLength 7
     sequence "KWEVLVI"
+    chem 1
   ]
   node [
     id 8
     label "9"
-    type 1
     aaLength 7
     sequence "FFKAILD"
+    chem 1
   ]
   node [
     id 9
     label "10"
-    type 1
     aaLength 4
     sequence "KMKF"
+    chem 1
   ]
   edge [
     source 0

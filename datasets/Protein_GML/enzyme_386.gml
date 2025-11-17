@@ -2,51 +2,51 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 22
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 3
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 24
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 3
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 0
     aaLength 3
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 5
     label "6"
-    type 0
     aaLength 29
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 6
     label "7"
-    type 0
     aaLength 35
     sequence "vanDerWaals"
+    chem 0
   ]
   edge [
     source 0

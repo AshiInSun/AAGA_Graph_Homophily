@@ -2,16 +2,16 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 22
     sequence "DSLVLYNRVAVQGDVVRELKAK"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 24
     sequence "PKEDVDAAVKQLLSLKAEYKEKTG"
+    chem 0
   ]
   edge [
     source 0

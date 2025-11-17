@@ -2,114 +2,114 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 21
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 27
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 3
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 32
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 0
     aaLength 36
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 5
     label "6"
-    type 0
     aaLength 4
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 6
     label "7"
-    type 0
     aaLength 21
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 7
     label "8"
-    type 0
     aaLength 27
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 8
     label "9"
-    type 0
     aaLength 3
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 9
     label "10"
-    type 0
     aaLength 32
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 10
     label "11"
-    type 0
     aaLength 37
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 11
     label "12"
-    type 0
     aaLength 4
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 12
     label "13"
-    type 0
     aaLength 22
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 13
     label "14"
-    type 0
     aaLength 27
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 14
     label "15"
-    type 0
     aaLength 32
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 15
     label "16"
-    type 0
     aaLength 37
     sequence "vanDerWaals"
+    chem 0
   ]
   edge [
     source 0

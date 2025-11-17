@@ -2,44 +2,44 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 6
     sequence "SQCVEV"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 12
     sequence "DELRAKYERITG"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 1
     aaLength 3
     sequence "ALM"
+    chem 1
   ]
   node [
     id 3
     label "4"
-    type 1
     aaLength 3
     sequence "IKD"
+    chem 1
   ]
   node [
     id 4
     label "5"
-    type 1
     aaLength 5
     sequence "AISQG"
+    chem 1
   ]
   node [
     id 5
     label "6"
-    type 1
     aaLength 5
     sequence "TYVIE"
+    chem 1
   ]
   edge [
     source 0

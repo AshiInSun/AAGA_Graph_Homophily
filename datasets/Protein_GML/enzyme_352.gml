@@ -2,65 +2,65 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 31
     sequence "REEMTLLGFEIVAYAGDARSKLLEALKAAEN"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 30
     sequence "FAKADSLVVEAGSCIAEAHSSQTGMLAREA"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 27
     sequence "VTMMHGQDHLMTTILLKDVIHHLIELY"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 30
     sequence "REEMTLLGFEIVAYAGDARSKLLEALKAAE"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 0
     aaLength 30
     sequence "FAKADSLVVEAGSCIAEAHSSQTGMLAREA"
+    chem 0
   ]
   node [
     id 5
     label "6"
-    type 0
     aaLength 27
     sequence "VTMMHGQDHLMTTILLKDVIHHLIELY"
+    chem 0
   ]
   node [
     id 6
     label "7"
-    type 0
     aaLength 30
     sequence "REEMTLLGFEIVAYAGDARSKLLEALKAAE"
+    chem 0
   ]
   node [
     id 7
     label "8"
-    type 0
     aaLength 30
     sequence "FAKADSLVVEAGSCIAEAHSSQTGMLAREA"
+    chem 0
   ]
   node [
     id 8
     label "9"
-    type 0
     aaLength 27
     sequence "VTMMHGQDHLMTTILLKDVIHHLIELY"
+    chem 0
   ]
   edge [
     source 0

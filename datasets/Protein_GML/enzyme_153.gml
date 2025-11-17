@@ -2,58 +2,58 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 18
     sequence "MQKPFEDASFALRTGEMS"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 10
     sequence "FTDSGIHIIL"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 7
     sequence "TE"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 11
     sequence "vanDerWaals"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 1
     aaLength 6
     sequence "vanDerWaals"
+    chem 1
   ]
   node [
     id 5
     label "6"
-    type 1
     aaLength 9
     sequence "FESLASQFS"
+    chem 1
   ]
   node [
     id 6
     label "7"
-    type 1
     aaLength 6
     sequence "vanDerWaals"
+    chem 1
   ]
   node [
     id 7
     label "8"
-    type 1
     aaLength 2
     sequence "vanDerWaals"
+    chem 1
   ]
   edge [
     source 0

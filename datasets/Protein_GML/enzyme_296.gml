@@ -1,958 +1,956 @@
 graph [
   node [
     id 0
-    label "1"
-    type 0
-    aaLength 6
-    sequence "TGPSSG"
+    label "2"
+    aaLength 8
+    sequence "EDLFYYLG"
+    chem 0
   ]
   node [
     id 1
-    label "2"
-    type 0
-    aaLength 8
-    sequence "EDLFYYLG"
+    label "3"
+    aaLength 6
+    sequence "DSSTIS"
+    chem 0
   ]
   node [
     id 2
-    label "3"
-    type 0
+    label "4"
     aaLength 6
-    sequence "DSSTIS"
+    sequence "TLQSFD"
+    chem 0
   ]
   node [
     id 3
-    label "4"
-    type 0
+    label "5"
     aaLength 6
-    sequence "TLQSFD"
+    sequence "TATQAQ"
+    chem 0
   ]
   node [
     id 4
-    label "5"
-    type 0
-    aaLength 6
-    sequence "TATQAQ"
+    label "6"
+    aaLength 9
+    sequence "GLDQNLVNG"
+    chem 0
   ]
   node [
     id 5
-    label "6"
-    type 0
-    aaLength 9
-    sequence "GLDQNLVNG"
+    label "7"
+    aaLength 6
+    sequence "TGPSSG"
+    chem 0
   ]
   node [
     id 6
-    label "7"
-    type 0
-    aaLength 6
-    sequence "TGPSSG"
+    label "8"
+    aaLength 8
+    sequence "EDLFYYLG"
+    chem 0
   ]
   node [
     id 7
-    label "8"
-    type 0
-    aaLength 8
-    sequence "EDLFYYLG"
+    label "9"
+    aaLength 6
+    sequence "DSSTIS"
+    chem 0
   ]
   node [
     id 8
-    label "9"
-    type 0
+    label "10"
     aaLength 6
-    sequence "DSSTIS"
+    sequence "TLQSFD"
+    chem 0
   ]
   node [
     id 9
-    label "10"
-    type 0
+    label "11"
     aaLength 6
-    sequence "TLQSFD"
+    sequence "TATQAQ"
+    chem 0
   ]
   node [
     id 10
-    label "11"
-    type 0
-    aaLength 6
-    sequence "TATQAQ"
+    label "12"
+    aaLength 9
+    sequence "GLDQNLVNG"
+    chem 0
   ]
   node [
     id 11
-    label "12"
-    type 0
-    aaLength 9
-    sequence "GLDQNLVNG"
+    label "13"
+    aaLength 6
+    sequence "TGPSSG"
+    chem 0
   ]
   node [
     id 12
-    label "13"
-    type 0
-    aaLength 6
-    sequence "TGPSSG"
+    label "14"
+    aaLength 8
+    sequence "EDLFYYLG"
+    chem 0
   ]
   node [
     id 13
-    label "14"
-    type 0
-    aaLength 8
-    sequence "EDLFYYLG"
+    label "15"
+    aaLength 6
+    sequence "DSSTIS"
+    chem 0
   ]
   node [
     id 14
-    label "15"
-    type 0
+    label "16"
     aaLength 6
-    sequence "DSSTIS"
+    sequence "TLQSFD"
+    chem 0
   ]
   node [
     id 15
-    label "16"
-    type 0
+    label "17"
     aaLength 6
-    sequence "TLQSFD"
+    sequence "TATQAQ"
+    chem 0
   ]
   node [
     id 16
-    label "17"
-    type 0
-    aaLength 6
-    sequence "TATQAQ"
+    label "18"
+    aaLength 9
+    sequence "GLDQNLVNG"
+    chem 0
   ]
   node [
     id 17
-    label "18"
-    type 0
-    aaLength 9
-    sequence "GLDQNLVNG"
+    label "19"
+    aaLength 6
+    sequence "TGPSSG"
+    chem 0
   ]
   node [
     id 18
-    label "19"
-    type 0
-    aaLength 6
-    sequence "TGPSSG"
+    label "20"
+    aaLength 8
+    sequence "EDLFYYLG"
+    chem 0
   ]
   node [
     id 19
-    label "20"
-    type 0
-    aaLength 8
-    sequence "EDLFYYLG"
+    label "21"
+    aaLength 6
+    sequence "DSSTIS"
+    chem 0
   ]
   node [
     id 20
-    label "21"
-    type 0
+    label "22"
     aaLength 6
-    sequence "DSSTIS"
+    sequence "TLQSFD"
+    chem 0
   ]
   node [
     id 21
-    label "22"
-    type 0
+    label "23"
     aaLength 6
-    sequence "TLQSFD"
+    sequence "TATQAQ"
+    chem 0
   ]
   node [
     id 22
-    label "23"
-    type 0
-    aaLength 6
-    sequence "TATQAQ"
+    label "24"
+    aaLength 9
+    sequence "GLDQNLVNG"
+    chem 0
   ]
   node [
     id 23
-    label "24"
-    type 0
-    aaLength 9
-    sequence "GLDQNLVNG"
+    label "25"
+    aaLength 3
+    sequence "YVI"
+    chem 1
   ]
   node [
     id 24
-    label "25"
-    type 1
-    aaLength 3
-    sequence "YVI"
+    label "26"
+    aaLength 4
+    sequence "VAFI"
+    chem 1
   ]
   node [
     id 25
-    label "26"
-    type 1
-    aaLength 4
-    sequence "VAFI"
+    label "27"
+    aaLength 7
+    sequence "CAFQVQE"
+    chem 1
   ]
   node [
     id 26
-    label "27"
-    type 1
-    aaLength 7
-    sequence "CAFQVQE"
+    label "28"
+    aaLength 8
+    sequence "SKVLFVSS"
+    chem 1
   ]
   node [
     id 27
-    label "28"
-    type 1
+    label "29"
     aaLength 8
-    sequence "SKVLFVSS"
+    sequence "YTLSTISM"
+    chem 1
   ]
   node [
     id 28
-    label "29"
-    type 1
-    aaLength 8
-    sequence "YTLSTISM"
+    label "30"
+    aaLength 7
+    sequence "QIVAPFV"
+    chem 1
   ]
   node [
     id 29
-    label "30"
-    type 1
-    aaLength 7
-    sequence "QIVAPFV"
+    label "31"
+    aaLength 4
+    sequence "KYLN"
+    chem 1
   ]
   node [
     id 30
-    label "31"
-    type 1
-    aaLength 4
-    sequence "KYLN"
+    label "32"
+    aaLength 3
+    sequence "EEW"
+    chem 1
   ]
   node [
     id 31
-    label "32"
-    type 1
-    aaLength 3
-    sequence "EEW"
+    label "33"
+    aaLength 2
+    sequence "TN"
+    chem 1
   ]
   node [
     id 32
-    label "33"
-    type 1
-    aaLength 2
-    sequence "TN"
+    label "34"
+    aaLength 3
+    sequence "VTV"
+    chem 1
   ]
   node [
     id 33
-    label "34"
-    type 1
-    aaLength 3
-    sequence "VTV"
+    label "35"
+    aaLength 7
+    sequence "QLYRFYV"
+    chem 1
   ]
   node [
     id 34
-    label "35"
-    type 1
+    label "36"
     aaLength 7
-    sequence "QLYRFYV"
+    sequence "TLMGTNA"
+    chem 1
   ]
   node [
     id 35
-    label "36"
-    type 1
-    aaLength 7
-    sequence "TLMGTNA"
+    label "37"
+    aaLength 8
+    sequence "TEMTGVIV"
+    chem 1
   ]
   node [
     id 36
-    label "37"
-    type 1
+    label "38"
     aaLength 8
-    sequence "TEMTGVIV"
+    sequence "YENFYCNK"
+    chem 1
   ]
   node [
     id 37
-    label "38"
-    type 1
-    aaLength 8
-    sequence "YENFYCNK"
+    label "39"
+    aaLength 4
+    sequence "YGSV"
+    chem 1
   ]
   node [
     id 38
-    label "39"
-    type 1
-    aaLength 4
-    sequence "YGSV"
+    label "40"
+    aaLength 3
+    sequence "YFI"
+    chem 1
   ]
   node [
     id 39
-    label "40"
-    type 1
-    aaLength 3
-    sequence "YFI"
+    label "41"
+    aaLength 2
+    sequence "HI"
+    chem 1
   ]
   node [
     id 40
-    label "41"
-    type 1
+    label "42"
     aaLength 2
-    sequence "HI"
+    sequence "YA"
+    chem 1
   ]
   node [
     id 41
-    label "42"
-    type 1
-    aaLength 2
-    sequence "YA"
+    label "43"
+    aaLength 6
+    sequence "THTFQI"
+    chem 1
   ]
   node [
     id 42
-    label "43"
-    type 1
+    label "44"
     aaLength 6
-    sequence "THTFQI"
+    sequence "FQLWAQ"
+    chem 1
   ]
   node [
     id 43
-    label "44"
-    type 1
-    aaLength 6
-    sequence "FQLWAQ"
+    label "45"
+    aaLength 5
+    sequence "QTRVL"
+    chem 1
   ]
   node [
     id 44
-    label "45"
-    type 1
-    aaLength 5
-    sequence "QTRVL"
+    label "46"
+    aaLength 2
+    sequence "TA"
+    chem 1
   ]
   node [
     id 45
-    label "46"
-    type 1
-    aaLength 2
-    sequence "TA"
+    label "47"
+    aaLength 3
+    sequence "TEL"
+    chem 1
   ]
   node [
     id 46
-    label "47"
-    type 1
-    aaLength 3
-    sequence "TEL"
+    label "48"
+    aaLength 5
+    sequence "VVVQI"
+    chem 1
   ]
   node [
     id 47
-    label "48"
-    type 1
+    label "49"
     aaLength 5
-    sequence "VVVQI"
+    sequence "FKYYS"
+    chem 1
   ]
   node [
     id 48
-    label "49"
-    type 1
-    aaLength 5
-    sequence "FKYYS"
+    label "50"
+    aaLength 2
+    sequence "IV"
+    chem 1
   ]
   node [
     id 49
-    label "50"
-    type 1
-    aaLength 2
-    sequence "IV"
+    label "51"
+    aaLength 3
+    sequence "YVI"
+    chem 1
   ]
   node [
     id 50
-    label "51"
-    type 1
-    aaLength 3
-    sequence "YVI"
+    label "52"
+    aaLength 4
+    sequence "VAFI"
+    chem 1
   ]
   node [
     id 51
-    label "52"
-    type 1
-    aaLength 4
-    sequence "VAFI"
+    label "53"
+    aaLength 7
+    sequence "CAFQVQE"
+    chem 1
   ]
   node [
     id 52
-    label "53"
-    type 1
-    aaLength 7
-    sequence "CAFQVQE"
+    label "54"
+    aaLength 8
+    sequence "SKVLFVSS"
+    chem 1
   ]
   node [
     id 53
-    label "54"
-    type 1
+    label "55"
     aaLength 8
-    sequence "SKVLFVSS"
+    sequence "YTLSTISM"
+    chem 1
   ]
   node [
     id 54
-    label "55"
-    type 1
-    aaLength 8
-    sequence "YTLSTISM"
+    label "56"
+    aaLength 7
+    sequence "QIVAPFV"
+    chem 1
   ]
   node [
     id 55
-    label "56"
-    type 1
-    aaLength 7
-    sequence "QIVAPFV"
+    label "57"
+    aaLength 4
+    sequence "KYLN"
+    chem 1
   ]
   node [
     id 56
-    label "57"
-    type 1
-    aaLength 4
-    sequence "KYLN"
+    label "58"
+    aaLength 3
+    sequence "EEW"
+    chem 1
   ]
   node [
     id 57
-    label "58"
-    type 1
-    aaLength 3
-    sequence "EEW"
+    label "59"
+    aaLength 2
+    sequence "TN"
+    chem 1
   ]
   node [
     id 58
-    label "59"
-    type 1
-    aaLength 2
-    sequence "TN"
+    label "60"
+    aaLength 3
+    sequence "VTV"
+    chem 1
   ]
   node [
     id 59
-    label "60"
-    type 1
-    aaLength 3
-    sequence "VTV"
+    label "61"
+    aaLength 7
+    sequence "QLYRFYV"
+    chem 1
   ]
   node [
     id 60
-    label "61"
-    type 1
+    label "62"
     aaLength 7
-    sequence "QLYRFYV"
+    sequence "TLMGTNA"
+    chem 1
   ]
   node [
     id 61
-    label "62"
-    type 1
-    aaLength 7
-    sequence "TLMGTNA"
+    label "63"
+    aaLength 8
+    sequence "TEMTGVIV"
+    chem 1
   ]
   node [
     id 62
-    label "63"
-    type 1
+    label "64"
     aaLength 8
-    sequence "TEMTGVIV"
+    sequence "YENFYCNK"
+    chem 1
   ]
   node [
     id 63
-    label "64"
-    type 1
-    aaLength 8
-    sequence "YENFYCNK"
+    label "65"
+    aaLength 4
+    sequence "YGSV"
+    chem 1
   ]
   node [
     id 64
-    label "65"
-    type 1
-    aaLength 4
-    sequence "YGSV"
+    label "66"
+    aaLength 3
+    sequence "YFI"
+    chem 1
   ]
   node [
     id 65
-    label "66"
-    type 1
-    aaLength 3
-    sequence "YFI"
+    label "67"
+    aaLength 2
+    sequence "HI"
+    chem 1
   ]
   node [
     id 66
-    label "67"
-    type 1
+    label "68"
     aaLength 2
-    sequence "HI"
+    sequence "YA"
+    chem 1
   ]
   node [
     id 67
-    label "68"
-    type 1
-    aaLength 2
-    sequence "YA"
+    label "69"
+    aaLength 6
+    sequence "THTFQI"
+    chem 1
   ]
   node [
     id 68
-    label "69"
-    type 1
+    label "70"
     aaLength 6
-    sequence "THTFQI"
+    sequence "FQLWAQ"
+    chem 1
   ]
   node [
     id 69
-    label "70"
-    type 1
-    aaLength 6
-    sequence "FQLWAQ"
+    label "71"
+    aaLength 5
+    sequence "QTRVL"
+    chem 1
   ]
   node [
     id 70
-    label "71"
-    type 1
-    aaLength 5
-    sequence "QTRVL"
+    label "72"
+    aaLength 2
+    sequence "TA"
+    chem 1
   ]
   node [
     id 71
-    label "72"
-    type 1
-    aaLength 2
-    sequence "TA"
+    label "73"
+    aaLength 3
+    sequence "TEL"
+    chem 1
   ]
   node [
     id 72
-    label "73"
-    type 1
-    aaLength 3
-    sequence "TEL"
+    label "74"
+    aaLength 5
+    sequence "VVVQI"
+    chem 1
   ]
   node [
     id 73
-    label "74"
-    type 1
+    label "75"
     aaLength 5
-    sequence "VVVQI"
+    sequence "FKYYS"
+    chem 1
   ]
   node [
     id 74
-    label "75"
-    type 1
-    aaLength 5
-    sequence "FKYYS"
+    label "76"
+    aaLength 3
+    sequence "YVI"
+    chem 1
   ]
   node [
     id 75
-    label "76"
-    type 1
-    aaLength 3
-    sequence "YVI"
+    label "77"
+    aaLength 4
+    sequence "VAFI"
+    chem 1
   ]
   node [
     id 76
-    label "77"
-    type 1
-    aaLength 4
-    sequence "VAFI"
+    label "78"
+    aaLength 7
+    sequence "CAFQVQE"
+    chem 1
   ]
   node [
     id 77
-    label "78"
-    type 1
-    aaLength 7
-    sequence "CAFQVQE"
+    label "79"
+    aaLength 8
+    sequence "SKVLFVSS"
+    chem 1
   ]
   node [
     id 78
-    label "79"
-    type 1
+    label "80"
     aaLength 8
-    sequence "SKVLFVSS"
+    sequence "YTLSTISM"
+    chem 1
   ]
   node [
     id 79
-    label "80"
-    type 1
-    aaLength 8
-    sequence "YTLSTISM"
+    label "81"
+    aaLength 7
+    sequence "QIVAPFV"
+    chem 1
   ]
   node [
     id 80
-    label "81"
-    type 1
-    aaLength 7
-    sequence "QIVAPFV"
+    label "82"
+    aaLength 4
+    sequence "KYLN"
+    chem 1
   ]
   node [
     id 81
-    label "82"
-    type 1
-    aaLength 4
-    sequence "KYLN"
+    label "83"
+    aaLength 3
+    sequence "EEW"
+    chem 1
   ]
   node [
     id 82
-    label "83"
-    type 1
-    aaLength 3
-    sequence "EEW"
+    label "84"
+    aaLength 2
+    sequence "TN"
+    chem 1
   ]
   node [
     id 83
-    label "84"
-    type 1
-    aaLength 2
-    sequence "TN"
+    label "85"
+    aaLength 3
+    sequence "VTV"
+    chem 1
   ]
   node [
     id 84
-    label "85"
-    type 1
-    aaLength 3
-    sequence "VTV"
+    label "86"
+    aaLength 7
+    sequence "QLYRFYV"
+    chem 1
   ]
   node [
     id 85
-    label "86"
-    type 1
+    label "87"
     aaLength 7
-    sequence "QLYRFYV"
+    sequence "TLMGTNA"
+    chem 1
   ]
   node [
     id 86
-    label "87"
-    type 1
-    aaLength 7
-    sequence "TLMGTNA"
+    label "88"
+    aaLength 8
+    sequence "TEMTGVIV"
+    chem 1
   ]
   node [
     id 87
-    label "88"
-    type 1
+    label "89"
     aaLength 8
-    sequence "TEMTGVIV"
+    sequence "YENFYCNK"
+    chem 1
   ]
   node [
     id 88
-    label "89"
-    type 1
-    aaLength 8
-    sequence "YENFYCNK"
+    label "90"
+    aaLength 4
+    sequence "YGSV"
+    chem 1
   ]
   node [
     id 89
-    label "90"
-    type 1
-    aaLength 4
-    sequence "YGSV"
+    label "91"
+    aaLength 3
+    sequence "YFI"
+    chem 1
   ]
   node [
     id 90
-    label "91"
-    type 1
-    aaLength 3
-    sequence "YFI"
+    label "92"
+    aaLength 2
+    sequence "HI"
+    chem 1
   ]
   node [
     id 91
-    label "92"
-    type 1
+    label "93"
     aaLength 2
-    sequence "HI"
+    sequence "YA"
+    chem 1
   ]
   node [
     id 92
-    label "93"
-    type 1
-    aaLength 2
-    sequence "YA"
+    label "94"
+    aaLength 7
+    sequence "VTHTFQI"
+    chem 1
   ]
   node [
     id 93
-    label "94"
-    type 1
+    label "95"
     aaLength 7
-    sequence "VTHTFQI"
+    sequence "FQLWAQS"
+    chem 1
   ]
   node [
     id 94
-    label "95"
-    type 1
-    aaLength 7
-    sequence "FQLWAQS"
+    label "96"
+    aaLength 5
+    sequence "QTRVL"
+    chem 1
   ]
   node [
     id 95
-    label "96"
-    type 1
-    aaLength 5
-    sequence "QTRVL"
+    label "97"
+    aaLength 2
+    sequence "TA"
+    chem 1
   ]
   node [
     id 96
-    label "97"
-    type 1
-    aaLength 2
-    sequence "TA"
+    label "98"
+    aaLength 3
+    sequence "TEL"
+    chem 1
   ]
   node [
     id 97
-    label "98"
-    type 1
-    aaLength 3
-    sequence "TEL"
+    label "99"
+    aaLength 5
+    sequence "VVVQI"
+    chem 1
   ]
   node [
     id 98
-    label "99"
-    type 1
+    label "100"
     aaLength 5
-    sequence "VVVQI"
+    sequence "FKYYS"
+    chem 1
   ]
   node [
     id 99
-    label "100"
-    type 1
-    aaLength 5
-    sequence "FKYYS"
+    label "101"
+    aaLength 2
+    sequence "IV"
+    chem 1
   ]
   node [
     id 100
-    label "101"
-    type 1
-    aaLength 2
-    sequence "IV"
+    label "102"
+    aaLength 3
+    sequence "YVI"
+    chem 1
   ]
   node [
     id 101
-    label "102"
-    type 1
-    aaLength 3
-    sequence "YVI"
+    label "103"
+    aaLength 4
+    sequence "VAFI"
+    chem 1
   ]
   node [
     id 102
-    label "103"
-    type 1
-    aaLength 4
-    sequence "VAFI"
+    label "104"
+    aaLength 7
+    sequence "CAFQVQE"
+    chem 1
   ]
   node [
     id 103
-    label "104"
-    type 1
-    aaLength 7
-    sequence "CAFQVQE"
+    label "105"
+    aaLength 8
+    sequence "SKVLFVSS"
+    chem 1
   ]
   node [
     id 104
-    label "105"
-    type 1
+    label "106"
     aaLength 8
-    sequence "SKVLFVSS"
+    sequence "YTLSTISM"
+    chem 1
   ]
   node [
     id 105
-    label "106"
-    type 1
-    aaLength 8
-    sequence "YTLSTISM"
+    label "107"
+    aaLength 7
+    sequence "QIVAPFV"
+    chem 1
   ]
   node [
     id 106
-    label "107"
-    type 1
-    aaLength 7
-    sequence "QIVAPFV"
+    label "108"
+    aaLength 4
+    sequence "KYLN"
+    chem 1
   ]
   node [
     id 107
-    label "108"
-    type 1
-    aaLength 4
-    sequence "KYLN"
+    label "109"
+    aaLength 3
+    sequence "EEW"
+    chem 1
   ]
   node [
     id 108
-    label "109"
-    type 1
-    aaLength 3
-    sequence "EEW"
+    label "110"
+    aaLength 2
+    sequence "TN"
+    chem 1
   ]
   node [
     id 109
-    label "110"
-    type 1
-    aaLength 2
-    sequence "TN"
+    label "111"
+    aaLength 3
+    sequence "VTV"
+    chem 1
   ]
   node [
     id 110
-    label "111"
-    type 1
-    aaLength 3
-    sequence "VTV"
+    label "112"
+    aaLength 7
+    sequence "QLYRFYV"
+    chem 1
   ]
   node [
     id 111
-    label "112"
-    type 1
+    label "113"
     aaLength 7
-    sequence "QLYRFYV"
+    sequence "TLMGTNA"
+    chem 1
   ]
   node [
     id 112
-    label "113"
-    type 1
-    aaLength 7
-    sequence "TLMGTNA"
+    label "114"
+    aaLength 8
+    sequence "TEMTGVIV"
+    chem 1
   ]
   node [
     id 113
-    label "114"
-    type 1
+    label "115"
     aaLength 8
-    sequence "TEMTGVIV"
+    sequence "YENFYCNK"
+    chem 1
   ]
   node [
     id 114
-    label "115"
-    type 1
-    aaLength 8
-    sequence "YENFYCNK"
+    label "116"
+    aaLength 4
+    sequence "YGSV"
+    chem 1
   ]
   node [
     id 115
-    label "116"
-    type 1
-    aaLength 4
-    sequence "YGSV"
+    label "117"
+    aaLength 3
+    sequence "YFI"
+    chem 1
   ]
   node [
     id 116
-    label "117"
-    type 1
-    aaLength 3
-    sequence "YFI"
+    label "118"
+    aaLength 2
+    sequence "HI"
+    chem 1
   ]
   node [
     id 117
-    label "118"
-    type 1
+    label "119"
     aaLength 2
-    sequence "HI"
+    sequence "YA"
+    chem 1
   ]
   node [
     id 118
-    label "119"
-    type 1
-    aaLength 2
-    sequence "YA"
+    label "120"
+    aaLength 6
+    sequence "THTFQI"
+    chem 1
   ]
   node [
     id 119
-    label "120"
-    type 1
+    label "121"
     aaLength 6
-    sequence "THTFQI"
+    sequence "FQLWAQ"
+    chem 1
   ]
   node [
     id 120
-    label "121"
-    type 1
-    aaLength 6
-    sequence "FQLWAQ"
+    label "122"
+    aaLength 5
+    sequence "QTRVL"
+    chem 1
   ]
   node [
     id 121
-    label "122"
-    type 1
-    aaLength 5
-    sequence "QTRVL"
+    label "123"
+    aaLength 2
+    sequence "TA"
+    chem 1
   ]
   node [
     id 122
-    label "123"
-    type 1
-    aaLength 2
-    sequence "TA"
+    label "124"
+    aaLength 3
+    sequence "TEL"
+    chem 1
   ]
   node [
     id 123
-    label "124"
-    type 1
-    aaLength 3
-    sequence "TEL"
+    label "125"
+    aaLength 5
+    sequence "VVVQI"
+    chem 1
   ]
   node [
     id 124
-    label "125"
-    type 1
-    aaLength 5
-    sequence "VVVQI"
-  ]
-  node [
-    id 125
     label "126"
-    type 1
     aaLength 5
     sequence "FKYYS"
+    chem 1
   ]
   edge [
-    source 1
-    target 36
+    source 0
+    target 35
+    frequency 1
+  ]
+  edge [
+    source 0
+    target 31
     frequency 1
   ]
   edge [
     source 1
-    target 32
+    target 2
     frequency 1
   ]
   edge [
-    source 2
-    target 3
-    frequency 1
-  ]
-  edge [
-    source 2
-    target 15
-    frequency 1
-  ]
-  edge [
-    source 2
-    target 32
-    frequency 1
-  ]
-  edge [
-    source 3
+    source 1
     target 14
     frequency 1
   ]
   edge [
+    source 1
+    target 31
+    frequency 1
+  ]
+  edge [
+    source 2
+    target 13
+    frequency 1
+  ]
+  edge [
+    source 2
+    target 40
+    frequency 1
+  ]
+  edge [
     source 3
-    target 41
-    frequency 1
-  ]
-  edge [
-    source 4
-    target 29
-    frequency 1
-  ]
-  edge [
-    source 4
-    target 55
-    frequency 1
-  ]
-  edge [
-    source 4
-    target 80
-    frequency 1
-  ]
-  edge [
-    source 4
     target 28
     frequency 1
   ]
   edge [
-    source 5
-    target 23
+    source 3
+    target 54
     frequency 1
   ]
   edge [
-    source 5
+    source 3
+    target 79
+    frequency 1
+  ]
+  edge [
+    source 3
     target 27
     frequency 1
   ]
   edge [
-    source 5
-    target 31
+    source 4
+    target 22
+    frequency 1
+  ]
+  edge [
+    source 4
+    target 26
+    frequency 1
+  ]
+  edge [
+    source 4
+    target 30
     frequency 2
   ]
   edge [
-    source 6
+    source 5
+    target 59
+    frequency 1
+  ]
+  edge [
+    source 5
     target 60
     frequency 1
   ]
@@ -962,67 +960,67 @@ graph [
     frequency 1
   ]
   edge [
-    source 7
-    target 62
-    frequency 1
-  ]
-  edge [
-    source 7
-    target 58
-    frequency 1
-  ]
-  edge [
-    source 8
-    target 21
-    frequency 1
-  ]
-  edge [
-    source 8
-    target 58
-    frequency 1
-  ]
-  edge [
-    source 8
-    target 9
-    frequency 2
-  ]
-  edge [
-    source 9
-    target 20
-    frequency 1
-  ]
-  edge [
-    source 9
-    target 67
-    frequency 1
-  ]
-  edge [
-    source 10
-    target 55
-    frequency 1
-  ]
-  edge [
-    source 10
-    target 54
-    frequency 1
-  ]
-  edge [
-    source 11
-    target 23
-    frequency 1
-  ]
-  edge [
-    source 11
-    target 53
-    frequency 1
-  ]
-  edge [
-    source 11
+    source 6
     target 57
     frequency 1
   ]
   edge [
-    source 12
+    source 7
+    target 20
+    frequency 1
+  ]
+  edge [
+    source 7
+    target 57
+    frequency 1
+  ]
+  edge [
+    source 7
+    target 8
+    frequency 2
+  ]
+  edge [
+    source 8
+    target 19
+    frequency 1
+  ]
+  edge [
+    source 8
+    target 66
+    frequency 1
+  ]
+  edge [
+    source 9
+    target 54
+    frequency 1
+  ]
+  edge [
+    source 9
+    target 53
+    frequency 1
+  ]
+  edge [
+    source 10
+    target 22
+    frequency 1
+  ]
+  edge [
+    source 10
+    target 52
+    frequency 1
+  ]
+  edge [
+    source 10
+    target 56
+    frequency 1
+  ]
+  edge [
+    source 11
+    target 84
+    frequency 1
+  ]
+  edge [
+    source 11
     target 85
     frequency 1
   ]
@@ -1032,57 +1030,57 @@ graph [
     frequency 1
   ]
   edge [
-    source 13
-    target 87
-    frequency 1
-  ]
-  edge [
-    source 13
-    target 83
-    frequency 1
-  ]
-  edge [
-    source 14
-    target 83
-    frequency 1
-  ]
-  edge [
-    source 14
-    target 15
-    frequency 2
-  ]
-  edge [
-    source 15
-    target 92
-    frequency 1
-  ]
-  edge [
-    source 16
-    target 80
-    frequency 1
-  ]
-  edge [
-    source 16
-    target 79
-    frequency 1
-  ]
-  edge [
-    source 17
-    target 23
-    frequency 1
-  ]
-  edge [
-    source 17
-    target 78
-    frequency 1
-  ]
-  edge [
-    source 17
+    source 12
     target 82
     frequency 1
   ]
   edge [
-    source 18
+    source 13
+    target 82
+    frequency 1
+  ]
+  edge [
+    source 13
+    target 14
+    frequency 2
+  ]
+  edge [
+    source 14
+    target 91
+    frequency 1
+  ]
+  edge [
+    source 15
+    target 79
+    frequency 1
+  ]
+  edge [
+    source 15
+    target 78
+    frequency 1
+  ]
+  edge [
+    source 16
+    target 22
+    frequency 1
+  ]
+  edge [
+    source 16
+    target 77
+    frequency 1
+  ]
+  edge [
+    source 16
+    target 81
+    frequency 1
+  ]
+  edge [
+    source 17
+    target 110
+    frequency 1
+  ]
+  edge [
+    source 17
     target 111
     frequency 1
   ]
@@ -1092,63 +1090,73 @@ graph [
     frequency 1
   ]
   edge [
-    source 19
-    target 113
-    frequency 1
-  ]
-  edge [
-    source 19
-    target 109
-    frequency 1
-  ]
-  edge [
-    source 20
-    target 109
-    frequency 1
-  ]
-  edge [
-    source 20
-    target 21
-    frequency 2
-  ]
-  edge [
-    source 21
-    target 118
-    frequency 1
-  ]
-  edge [
-    source 22
-    target 106
-    frequency 1
-  ]
-  edge [
-    source 22
-    target 105
-    frequency 1
-  ]
-  edge [
-    source 23
-    target 104
-    frequency 1
-  ]
-  edge [
-    source 23
+    source 18
     target 108
     frequency 1
   ]
   edge [
-    source 24
-    target 49
+    source 19
+    target 108
+    frequency 1
+  ]
+  edge [
+    source 19
+    target 20
+    frequency 2
+  ]
+  edge [
+    source 20
+    target 117
+    frequency 1
+  ]
+  edge [
+    source 21
+    target 105
+    frequency 1
+  ]
+  edge [
+    source 21
+    target 104
+    frequency 1
+  ]
+  edge [
+    source 22
+    target 103
+    frequency 1
+  ]
+  edge [
+    source 22
+    target 107
+    frequency 1
+  ]
+  edge [
+    source 23
+    target 48
+    frequency 1
+  ]
+  edge [
+    source 23
+    target 99
+    frequency 1
+  ]
+  edge [
+    source 23
+    target 32
     frequency 1
   ]
   edge [
     source 24
-    target 100
+    target 45
     frequency 1
   ]
   edge [
     source 24
-    target 33
+    target 47
+    frequency 1
+  ]
+  edge [
+    source 25
+    target 27
     frequency 1
   ]
   edge [
@@ -1157,33 +1165,23 @@ graph [
     frequency 1
   ]
   edge [
-    source 25
-    target 48
-    frequency 1
-  ]
-  edge [
-    source 26
-    target 28
-    frequency 1
-  ]
-  edge [
     source 26
     target 47
     frequency 1
   ]
   edge [
-    source 27
-    target 48
+    source 28
+    target 29
     frequency 1
   ]
   edge [
     source 29
-    target 30
+    target 38
     frequency 1
   ]
   edge [
-    source 30
-    target 39
+    source 32
+    target 33
     frequency 1
   ]
   edge [
@@ -1193,12 +1191,17 @@ graph [
   ]
   edge [
     source 34
-    target 35
+    target 39
     frequency 1
   ]
   edge [
     source 35
-    target 40
+    target 41
+    frequency 1
+  ]
+  edge [
+    source 36
+    target 39
     frequency 1
   ]
   edge [
@@ -1208,72 +1211,77 @@ graph [
   ]
   edge [
     source 37
-    target 40
-    frequency 1
-  ]
-  edge [
-    source 37
     target 43
     frequency 1
   ]
   edge [
+    source 37
+    target 41
+    frequency 1
+  ]
+  edge [
     source 38
     target 44
     frequency 1
   ]
   edge [
-    source 38
-    target 42
+    source 40
+    target 91
     frequency 1
   ]
   edge [
-    source 39
-    target 45
-    frequency 1
-  ]
-  edge [
-    source 41
-    target 92
-    frequency 1
-  ]
-  edge [
-    source 41
-    target 45
-    frequency 1
-  ]
-  edge [
-    source 43
+    source 40
     target 44
     frequency 1
   ]
   edge [
-    source 46
-    target 47
+    source 42
+    target 43
+    frequency 1
+  ]
+  edge [
+    source 45
+    target 46
+    frequency 1
+  ]
+  edge [
+    source 47
+    target 73
+    frequency 1
+  ]
+  edge [
+    source 47
+    target 124
     frequency 1
   ]
   edge [
     source 48
-    target 74
-    frequency 1
+    target 49
+    frequency 2
   ]
   edge [
-    source 48
-    target 125
+    source 49
+    target 99
     frequency 1
   ]
   edge [
     source 49
-    target 50
-    frequency 2
-  ]
-  edge [
-    source 50
-    target 100
+    target 58
     frequency 1
   ]
   edge [
     source 50
-    target 59
+    target 71
+    frequency 1
+  ]
+  edge [
+    source 50
+    target 73
+    frequency 1
+  ]
+  edge [
+    source 51
+    target 53
     frequency 1
   ]
   edge [
@@ -1282,43 +1290,38 @@ graph [
     frequency 1
   ]
   edge [
-    source 51
-    target 74
-    frequency 1
-  ]
-  edge [
-    source 52
-    target 54
-    frequency 1
-  ]
-  edge [
     source 52
     target 73
     frequency 1
   ]
   edge [
-    source 53
-    target 74
+    source 54
+    target 55
     frequency 1
   ]
   edge [
     source 55
-    target 56
+    target 64
     frequency 1
   ]
   edge [
-    source 56
+    source 58
+    target 59
+    frequency 1
+  ]
+  edge [
+    source 60
     target 65
     frequency 1
   ]
   edge [
-    source 59
-    target 60
+    source 61
+    target 67
     frequency 1
   ]
   edge [
-    source 61
-    target 66
+    source 62
+    target 65
     frequency 1
   ]
   edge [
@@ -1328,62 +1331,67 @@ graph [
   ]
   edge [
     source 63
-    target 66
-    frequency 1
-  ]
-  edge [
-    source 63
     target 69
     frequency 1
   ]
   edge [
+    source 63
+    target 67
+    frequency 1
+  ]
+  edge [
     source 64
     target 70
     frequency 1
   ]
   edge [
-    source 64
-    target 68
+    source 66
+    target 91
     frequency 1
   ]
   edge [
-    source 65
-    target 71
-    frequency 1
-  ]
-  edge [
-    source 67
-    target 92
-    frequency 1
-  ]
-  edge [
-    source 67
-    target 71
-    frequency 1
-  ]
-  edge [
-    source 69
+    source 66
     target 70
     frequency 1
   ]
   edge [
-    source 72
-    target 73
+    source 68
+    target 69
+    frequency 1
+  ]
+  edge [
+    source 71
+    target 72
+    frequency 1
+  ]
+  edge [
+    source 73
+    target 98
+    frequency 1
+  ]
+  edge [
+    source 73
+    target 124
     frequency 1
   ]
   edge [
     source 74
-    target 99
-    frequency 1
-  ]
-  edge [
-    source 74
-    target 125
+    target 83
     frequency 1
   ]
   edge [
     source 75
-    target 84
+    target 96
+    frequency 1
+  ]
+  edge [
+    source 75
+    target 98
+    frequency 1
+  ]
+  edge [
+    source 76
+    target 78
     frequency 1
   ]
   edge [
@@ -1392,43 +1400,38 @@ graph [
     frequency 1
   ]
   edge [
-    source 76
-    target 99
-    frequency 1
-  ]
-  edge [
-    source 77
-    target 79
-    frequency 1
-  ]
-  edge [
     source 77
     target 98
     frequency 1
   ]
   edge [
-    source 78
-    target 99
+    source 79
+    target 80
     frequency 1
   ]
   edge [
     source 80
-    target 81
+    target 89
     frequency 1
   ]
   edge [
-    source 81
+    source 83
+    target 84
+    frequency 1
+  ]
+  edge [
+    source 85
     target 90
     frequency 1
   ]
   edge [
-    source 84
-    target 85
+    source 86
+    target 92
     frequency 1
   ]
   edge [
-    source 86
-    target 91
+    source 87
+    target 90
     frequency 1
   ]
   edge [
@@ -1438,62 +1441,67 @@ graph [
   ]
   edge [
     source 88
-    target 91
-    frequency 1
-  ]
-  edge [
-    source 88
     target 94
     frequency 1
   ]
   edge [
+    source 88
+    target 92
+    frequency 1
+  ]
+  edge [
     source 89
     target 95
     frequency 1
   ]
   edge [
-    source 89
-    target 93
+    source 91
+    target 117
     frequency 1
   ]
   edge [
-    source 90
-    target 96
-    frequency 1
-  ]
-  edge [
-    source 92
-    target 118
-    frequency 1
-  ]
-  edge [
-    source 92
-    target 96
-    frequency 1
-  ]
-  edge [
-    source 94
+    source 91
     target 95
     frequency 1
   ]
   edge [
-    source 97
-    target 98
+    source 93
+    target 94
+    frequency 1
+  ]
+  edge [
+    source 96
+    target 97
+    frequency 1
+  ]
+  edge [
+    source 98
+    target 124
     frequency 1
   ]
   edge [
     source 99
-    target 125
+    target 100
     frequency 1
   ]
   edge [
     source 100
-    target 101
+    target 109
     frequency 1
   ]
   edge [
     source 101
-    target 110
+    target 122
+    frequency 1
+  ]
+  edge [
+    source 101
+    target 124
+    frequency 1
+  ]
+  edge [
+    source 102
+    target 104
     frequency 1
   ]
   edge [
@@ -1502,43 +1510,38 @@ graph [
     frequency 1
   ]
   edge [
-    source 102
-    target 125
-    frequency 1
-  ]
-  edge [
-    source 103
-    target 105
-    frequency 1
-  ]
-  edge [
     source 103
     target 124
     frequency 1
   ]
   edge [
-    source 104
-    target 125
+    source 105
+    target 106
     frequency 1
   ]
   edge [
     source 106
-    target 107
+    target 115
     frequency 1
   ]
   edge [
-    source 107
+    source 109
+    target 110
+    frequency 1
+  ]
+  edge [
+    source 111
     target 116
     frequency 1
   ]
   edge [
-    source 110
-    target 111
+    source 112
+    target 118
     frequency 1
   ]
   edge [
-    source 112
-    target 117
+    source 113
+    target 116
     frequency 1
   ]
   edge [
@@ -1548,42 +1551,32 @@ graph [
   ]
   edge [
     source 114
-    target 117
-    frequency 1
-  ]
-  edge [
-    source 114
     target 120
     frequency 1
   ]
   edge [
+    source 114
+    target 118
+    frequency 1
+  ]
+  edge [
     source 115
     target 121
     frequency 1
   ]
   edge [
-    source 115
-    target 119
-    frequency 1
-  ]
-  edge [
-    source 116
-    target 122
-    frequency 1
-  ]
-  edge [
-    source 118
-    target 122
-    frequency 1
-  ]
-  edge [
-    source 120
+    source 117
     target 121
     frequency 1
   ]
   edge [
-    source 123
-    target 124
+    source 119
+    target 120
+    frequency 1
+  ]
+  edge [
+    source 122
+    target 123
     frequency 1
   ]
 ]

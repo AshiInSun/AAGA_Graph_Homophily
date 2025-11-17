@@ -54,36 +54,36 @@ def experimental_comparaison(path, label_G):
                 g2_node_homophily = graph_homophily_measures.node_homophily(G2, class_attr=label_G)
                 g2_class_homophily = graph_homophily_measures.class_homophily(G2, class_attr=label_G)
                 g2_adjusted_homophily = graph_homophily_measures.adjusted_homophily(G2, class_attr=label_G)
-                g1_unbiased_homophily = graph_homophily_measures.unbiased_homophily(G1, class_attr=label_G)
-                g2_unbiased_homophily = graph_homophily_measures.unbiased_homophily(G2, class_attr=label_G)
+                #g1_unbiased_homophily = graph_homophily_measures.unbiased_homophily(G1, class_attr=label_G)
+                #g2_unbiased_homophily = graph_homophily_measures.unbiased_homophily(G2, class_attr=label_G)
 
                 edge_result = g1_edge_homophily > g2_edge_homophily
                 node_result = g1_node_homophily > g2_node_homophily
                 class_result = g1_class_homophily > g2_class_homophily
                 adjusted_result = g1_adjusted_homophily > g2_adjusted_homophily
-                unbiased_result = g1_unbiased_homophily > g2_unbiased_homophily
+                #unbiased_result = g1_unbiased_homophily > g2_unbiased_homophily
 
                 edge_node_result = edge_result == node_result
                 edge_class_result = edge_result == class_result
                 edge_adjusted_result = edge_result == adjusted_result
-                edge_unbiased_result = edge_result == unbiased_result
+                #edge_unbiased_result = edge_result == unbiased_result
                 node_class_result = node_result == class_result
                 node_adjusted_result = node_result == adjusted_result
-                node_unbiased_result = node_result == unbiased_result
+               # node_unbiased_result = node_result == unbiased_result
                 class_adjusted_result = class_result == adjusted_result
-                class_unbiased_result = class_result == unbiased_result
-                adjusted_unbiased_result = adjusted_result == unbiased_result
+              #  class_unbiased_result = class_result == unbiased_result
+            #    adjusted_unbiased_result = adjusted_result == unbiased_result
 
                 edge_node_agreement += edge_node_result
                 edge_class_agreement += edge_class_result
                 edge_adjusted_agreement += edge_adjusted_result
-                edge_unbiased_agreement += edge_unbiased_result
+             #   edge_unbiased_agreement += edge_unbiased_result
                 node_class_agreement += node_class_result
                 node_adjusted_agreement += node_adjusted_result
-                node_unbiased_agreement += node_unbiased_result
+              #  node_unbiased_agreement += node_unbiased_result
                 class_adjusted_agreement += class_adjusted_result
-                class_unbiased_agreement += class_unbiased_result
-                adjusted_unbiased_agreement += adjusted_unbiased_result
+             #   class_unbiased_agreement += class_unbiased_result
+             #   adjusted_unbiased_agreement += adjusted_unbiased_result
 
             except Exception as e:
                 print(f"Erreur lors du traitement des fichiers {fichier1} et {fichier2} : {e}")
@@ -105,11 +105,11 @@ def experimental_comparaison(path, label_G):
     print(f"Accord entre edge et node homophily: {edge_node_agreement}")
     print(f"Accord entre edge et class homophily: {edge_class_agreement}")
     print(f"Accord entre edge et adjusted homophily: {edge_adjusted_agreement}")
-    print(f"Accord entre edge et unbiased homophily: {edge_unbiased_agreement}")
+   # print(f"Accord entre edge et unbiased homophily: {edge_unbiased_agreement}")
     print(f"Accord entre node et class homophily: {node_class_agreement}")
     print(f"Accord entre node et adjusted homophily: {node_adjusted_agreement}")
-    print(f"Accord entre node et unbiased homophily: {node_unbiased_agreement}")
+    #print(f"Accord entre node et unbiased homophily: {node_unbiased_agreement}")
     print(f"Accord entre class et adjusted homophily: {class_adjusted_agreement}")
-    print(f"Accord entre class et unbiased homophily: {class_unbiased_agreement}")
-    print(f"Accord entre adjusted et unbiased homophily: {adjusted_unbiased_agreement}")
+    #print(f"Accord entre class et unbiased homophily: {class_unbiased_agreement}")
+    #print(f"Accord entre adjusted et unbiased homophily: {adjusted_unbiased_agreement}")
 

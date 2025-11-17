@@ -2,296 +2,296 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 10
     sequence "YIGSHTCVQL"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 8
     sequence "RSVLPVIE"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 8
     sequence "EALMTEIL"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 6
     sequence "VGESVQ"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 0
     aaLength 19
     sequence "PLEYYDNNVNGTLRLISAM"
+    chem 0
   ]
   node [
     id 5
     label "6"
-    type 0
     aaLength 19
     sequence "PYGKSKLMVEQILTDLQKA"
+    chem 0
   ]
   node [
     id 6
     label "7"
-    type 0
     aaLength 7
     sequence "LMPYIAQ"
+    chem 0
   ]
   node [
     id 7
     label "8"
-    type 0
     aaLength 14
     sequence "VMDLADGHVVAMEK"
+    chem 0
   ]
   node [
     id 8
     label "9"
-    type 0
     aaLength 9
     sequence "VLDVVNAFS"
+    chem 0
   ]
   node [
     id 9
     label "10"
-    type 0
     aaLength 6
     sequence "SKADRE"
+    chem 0
   ]
   node [
     id 10
     label "11"
-    type 0
     aaLength 14
     sequence "LDEMAQDTWHWQSR"
+    chem 0
   ]
   node [
     id 11
     label "12"
-    type 1
     aaLength 7
     sequence "GVHIYNL"
+    chem 1
   ]
   node [
     id 12
     label "13"
-    type 1
     aaLength 7
     sequence "SIALLRY"
+    chem 1
   ]
   node [
     id 13
     label "14"
-    type 1
     aaLength 7
     sequence "NFIFSSS"
+    chem 1
   ]
   node [
     id 14
     label "15"
-    type 1
     aaLength 4
     sequence "TVIH"
+    chem 1
   ]
   node [
     id 15
     label "16"
-    type 1
     aaLength 5
     sequence "RVLVT"
+    chem 1
   ]
   node [
     id 16
     label "17"
-    type 1
     aaLength 6
     sequence "DVIILD"
+    chem 1
   ]
   node [
     id 17
     label "18"
-    type 1
     aaLength 4
     sequence "TFVE"
+    chem 1
   ]
   node [
     id 18
     label "19"
-    type 1
     aaLength 3
     sequence "NPV"
+    chem 1
   ]
   node [
     id 19
     label "20"
-    type 1
     aaLength 3
     sequence "YIH"
+    chem 1
   ]
   node [
     id 20
     label "21"
-    type 1
     aaLength 4
     sequence "LAIF"
+    chem 1
   ]
   node [
     id 21
     label "22"
-    type 1
     aaLength 4
     sequence "YHFA"
+    chem 1
   ]
   node [
     id 22
     label "23"
-    type 2
     aaLength 4
     sequence "VTGG"
+    chem 2
   ]
   node [
     id 23
     label "24"
-    type 2
     aaLength 4
     sequence "GGSG"
+    chem 2
   ]
   node [
     id 24
     label "25"
-    type 2
     aaLength 4
     sequence "LQNG"
+    chem 2
   ]
   node [
     id 25
     label "26"
-    type 2
     aaLength 4
     sequence "LCNS"
+    chem 2
   ]
   node [
     id 26
     label "27"
-    type 2
     aaLength 4
     sequence "RLGG"
+    chem 2
   ]
   node [
     id 27
     label "28"
-    type 2
     aaLength 4
     sequence "DIRN"
+    chem 2
   ]
   node [
     id 28
     label "29"
-    type 2
     aaLength 4
     sequence "HDHA"
+    chem 2
   ]
   node [
     id 29
     label "30"
-    type 2
     aaLength 4
     sequence "RAAN"
+    chem 2
   ]
   node [
     id 30
     label "31"
-    type 2
     aaLength 4
     sequence "SATV"
+    chem 2
   ]
   node [
     id 31
     label "32"
-    type 2
     aaLength 4
     sequence "ATVY"
+    chem 2
   ]
   node [
     id 32
     label "33"
-    type 2
     aaLength 4
     sequence "TVYG"
+    chem 2
   ]
   node [
     id 33
     label "34"
-    type 2
     aaLength 4
     sequence "VESF"
+    chem 2
   ]
   node [
     id 34
     label "35"
-    type 2
     aaLength 4
     sequence "QPDW"
+    chem 2
   ]
   node [
     id 35
     label "36"
-    type 2
     aaLength 4
     sequence "HPSG"
+    chem 2
   ]
   node [
     id 36
     label "37"
-    type 2
     aaLength 4
     sequence "VAVG"
+    chem 2
   ]
   node [
     id 37
     label "38"
-    type 2
     aaLength 4
     sequence "TEDG"
+    chem 2
   ]
   node [
     id 38
     label "39"
-    type 2
     aaLength 4
     sequence "LANK"
+    chem 2
   ]
   node [
     id 39
     label "40"
-    type 2
     aaLength 4
     sequence "KACG"
+    chem 2
   ]
   node [
     id 40
     label "41"
-    type 2
     aaLength 4
     sequence "REGD"
+    chem 2
   ]
   node [
     id 41
     label "42"
-    type 2
     aaLength 4
     sequence "HPQG"
+    chem 2
   ]
   edge [
     source 0

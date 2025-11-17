@@ -2,51 +2,51 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 13
     sequence "VDSDTSIFQLKEV"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 6
     sequence "RNDWTV"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 1
     aaLength 5
     sequence "RFNSS"
+    chem 1
   ]
   node [
     id 3
     label "4"
-    type 1
     aaLength 6
     sequence "PLGSMI"
+    chem 1
   ]
   node [
     id 4
     label "5"
-    type 1
     aaLength 7
     sequence "CDLDQQS"
+    chem 1
   ]
   node [
     id 5
     label "6"
-    type 1
     aaLength 4
     sequence "PADQ"
+    chem 1
   ]
   node [
     id 6
     label "7"
-    type 1
     aaLength 2
     sequence "VI"
+    chem 1
   ]
   edge [
     source 0

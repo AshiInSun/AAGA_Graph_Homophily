@@ -2,205 +2,205 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 14
     sequence "SLFGQEVYCQLRKE"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 11
     sequence "DPDGLEAEKDG"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 10
     sequence "LPEVVAKYQA"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 6
     sequence "PMEVIN"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 0
     aaLength 9
     sequence "SAINWTLIH"
+    chem 0
   ]
   node [
     id 5
     label "6"
-    type 0
     aaLength 9
     sequence "TVSTLYNRF"
+    chem 0
   ]
   node [
     id 6
     label "7"
-    type 0
     aaLength 20
     sequence "FLFPEGIKGMVQAVRLIAEG"
+    chem 0
   ]
   node [
     id 7
     label "8"
-    type 0
     aaLength 6
     sequence "KKETAK"
+    chem 0
   ]
   node [
     id 8
     label "9"
-    type 0
     aaLength 11
     sequence "PAEAIHNWIRG"
+    chem 0
   ]
   node [
     id 9
     label "10"
-    type 0
     aaLength 3
     sequence "SQF"
+    chem 0
   ]
   node [
     id 10
     label "11"
-    type 1
     aaLength 2
     sequence "VF"
+    chem 1
   ]
   node [
     id 11
     label "12"
-    type 1
     aaLength 6
     sequence "EVVGVF"
+    chem 1
   ]
   node [
     id 12
     label "13"
-    type 1
     aaLength 6
     sequence "KIAVIG"
+    chem 1
   ]
   node [
     id 13
     label "14"
-    type 1
     aaLength 6
     sequence "LNVLPF"
+    chem 1
   ]
   node [
     id 14
     label "15"
-    type 1
     aaLength 5
     sequence "SIIYH"
+    chem 1
   ]
   node [
     id 15
     label "16"
-    type 1
     aaLength 8
     sequence "KGGFTIFW"
+    chem 1
   ]
   node [
     id 16
     label "17"
-    type 1
     aaLength 8
     sequence "LLLQKECE"
+    chem 1
   ]
   node [
     id 17
     label "18"
-    type 1
     aaLength 2
     sequence "RA"
+    chem 1
   ]
   node [
     id 18
     label "19"
-    type 1
     aaLength 2
     sequence "QA"
+    chem 1
   ]
   node [
     id 19
     label "20"
-    type 1
     aaLength 5
     sequence "AWTEA"
+    chem 1
   ]
   node [
     id 20
     label "21"
-    type 1
     aaLength 9
     sequence "QKLTFFNST"
+    chem 1
   ]
   node [
     id 21
     label "22"
-    type 1
     aaLength 9
     sequence "MLLVKNIQL"
+    chem 1
   ]
   node [
     id 22
     label "23"
-    type 1
     aaLength 5
     sequence "GLILF"
+    chem 1
   ]
   node [
     id 23
     label "24"
-    type 1
     aaLength 3
     sequence "VVT"
+    chem 1
   ]
   node [
     id 24
     label "25"
-    type 1
     aaLength 2
     sequence "EA"
+    chem 1
   ]
   node [
     id 25
     label "26"
-    type 1
     aaLength 5
     sequence "AWTEA"
+    chem 1
   ]
   node [
     id 26
     label "27"
-    type 1
     aaLength 9
     sequence "QKLTFFNST"
+    chem 1
   ]
   node [
     id 27
     label "28"
-    type 1
     aaLength 9
     sequence "MLLVKNIQL"
+    chem 1
   ]
   node [
     id 28
     label "29"
-    type 1
     aaLength 3
     sequence "MMP"
+    chem 1
   ]
   edge [
     source 0

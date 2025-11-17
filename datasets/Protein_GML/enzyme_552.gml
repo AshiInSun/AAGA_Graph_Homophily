@@ -2,289 +2,184 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 6
     sequence "HWHKDF"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 0
     aaLength 5
     sequence "PIAKG"
+    chem 0
   ]
   node [
     id 2
     label "3"
-    type 0
     aaLength 3
     sequence "YGD"
+    chem 0
   ]
   node [
     id 3
     label "4"
-    type 0
     aaLength 6
     sequence "FGKAVQ"
+    chem 0
   ]
   node [
     id 4
     label "5"
-    type 0
     aaLength 9
     sequence "PGLQKVVDV"
+    chem 0
   ]
   node [
     id 5
     label "6"
-    type 0
     aaLength 6
     sequence "LDSIKT"
+    chem 0
   ]
   node [
     id 6
     label "7"
-    type 0
     aaLength 6
     sequence "PRGLLP"
+    chem 0
   ]
   node [
     id 7
     label "8"
-    type 0
     aaLength 6
     sequence "VLKFRK"
+    chem 0
   ]
   node [
     id 8
-    label "9"
-    type 0
-    aaLength 5
-    sequence "vanDerWaals"
+    label "12"
+    aaLength 2
+    sequence "DI"
+    chem 1
   ]
   node [
     id 9
-    label "10"
-    type 0
-    aaLength 6
-    sequence "vanDerWaals"
+    label "13"
+    aaLength 2
+    sequence "TV"
+    chem 1
   ]
   node [
     id 10
-    label "11"
-    type 0
-    aaLength 5
-    sequence "vanDerWaals"
+    label "14"
+    aaLength 2
+    sequence "KY"
+    chem 1
   ]
   node [
     id 11
-    label "12"
-    type 1
+    label "15"
     aaLength 2
-    sequence "DI"
+    sequence "AS"
+    chem 1
   ]
   node [
     id 12
-    label "13"
-    type 1
-    aaLength 2
-    sequence "TV"
+    label "16"
+    aaLength 3
+    sequence "WTY"
+    chem 1
   ]
   node [
     id 13
-    label "14"
-    type 1
-    aaLength 2
-    sequence "KY"
+    label "17"
+    aaLength 3
+    sequence "VLK"
+    chem 1
   ]
   node [
     id 14
-    label "15"
-    type 1
-    aaLength 2
-    sequence "AS"
+    label "18"
+    aaLength 11
+    sequence "AVLGIFLKVGS"
+    chem 1
   ]
   node [
     id 15
-    label "16"
-    type 1
-    aaLength 3
-    sequence "WTY"
+    label "19"
+    aaLength 4
+    sequence "SVSS"
+    chem 1
   ]
   node [
     id 16
-    label "17"
-    type 1
-    aaLength 3
-    sequence "VLK"
+    label "20"
+    aaLength 11
+    sequence "AVLGIFLKVGS"
+    chem 1
   ]
   node [
     id 17
-    label "18"
-    type 1
-    aaLength 11
-    sequence "AVLGIFLKVGS"
+    label "21"
+    aaLength 9
+    sequence "AELHLVHWN"
+    chem 1
   ]
   node [
     id 18
-    label "19"
-    type 1
-    aaLength 4
-    sequence "SVSS"
+    label "22"
+    aaLength 10
+    sequence "YRLIQFHFHW"
+    chem 1
   ]
   node [
     id 19
-    label "20"
-    type 1
-    aaLength 11
-    sequence "AVLGIFLKVGS"
+    label "23"
+    aaLength 4
+    sequence "VLKG"
+    chem 1
   ]
   node [
     id 20
-    label "21"
-    type 1
-    aaLength 9
-    sequence "AELHLVHWN"
+    label "24"
+    aaLength 4
+    sequence "LSVS"
+    chem 1
   ]
   node [
     id 21
-    label "22"
-    type 1
-    aaLength 10
-    sequence "YRLIQFHFHW"
+    label "25"
+    aaLength 4
+    sequence "VLKG"
+    chem 1
   ]
   node [
     id 22
-    label "23"
-    type 1
-    aaLength 4
-    sequence "VLKG"
+    label "26"
+    aaLength 10
+    sequence "YRLIQFHFHW"
+    chem 1
   ]
   node [
     id 23
-    label "24"
-    type 1
-    aaLength 4
-    sequence "LSVS"
+    label "27"
+    aaLength 5
+    sequence "FNVEF"
+    chem 1
   ]
   node [
     id 24
-    label "25"
-    type 1
-    aaLength 4
-    sequence "VLKG"
+    label "28"
+    aaLength 6
+    sequence "SLRILN"
+    chem 1
   ]
   node [
     id 25
-    label "26"
-    type 1
-    aaLength 10
-    sequence "YRLIQFHFHW"
-  ]
-  node [
-    id 26
-    label "27"
-    type 1
-    aaLength 5
-    sequence "FNVEF"
-  ]
-  node [
-    id 27
-    label "28"
-    type 1
-    aaLength 6
-    sequence "SLRILN"
-  ]
-  node [
-    id 28
     label "29"
-    type 1
     aaLength 2
     sequence "AD"
-  ]
-  node [
-    id 29
-    label "30"
-    type 1
-    aaLength 5
-    sequence "vanDerWaals"
-  ]
-  node [
-    id 30
-    label "31"
-    type 1
-    aaLength 9
-    sequence "vanDerWaals"
-  ]
-  node [
-    id 31
-    label "32"
-    type 1
-    aaLength 6
-    sequence "vanDerWaals"
-  ]
-  node [
-    id 32
-    label "33"
-    type 1
-    aaLength 5
-    sequence "vanDerWaals"
-  ]
-  node [
-    id 33
-    label "34"
-    type 1
-    aaLength 4
-    sequence "vanDerWaals"
-  ]
-  node [
-    id 34
-    label "35"
-    type 1
-    aaLength 6
-    sequence "vanDerWaals"
-  ]
-  node [
-    id 35
-    label "36"
-    type 1
-    aaLength 7
-    sequence "vanDerWaals"
-  ]
-  node [
-    id 36
-    label "37"
-    type 1
-    aaLength 2
-    sequence "vanDerWaals"
-  ]
-  node [
-    id 37
-    label "38"
-    type 1
-    aaLength 7
-    sequence "vanDerWaals"
-  ]
-  node [
-    id 38
-    label "39"
-    type 1
-    aaLength 6
-    sequence "vanDerWaals"
-  ]
-  node [
-    id 39
-    label "40"
-    type 1
-    aaLength 7
-    sequence "vanDerWaals"
-  ]
-  node [
-    id 40
-    label "41"
-    type 1
-    aaLength 4
-    sequence "vanDerWaals"
+    chem 1
   ]
   edge [
     source 0
@@ -298,7 +193,7 @@ graph [
   ]
   edge [
     source 0
-    target 11
+    target 8
     frequency 1
   ]
   edge [
@@ -313,7 +208,7 @@ graph [
   ]
   edge [
     source 1
-    target 11
+    target 8
     frequency 1
   ]
   edge [
@@ -328,7 +223,7 @@ graph [
   ]
   edge [
     source 2
-    target 20
+    target 17
     frequency 1
   ]
   edge [
@@ -348,7 +243,7 @@ graph [
   ]
   edge [
     source 3
-    target 17
+    target 14
     frequency 1
   ]
   edge [
@@ -363,7 +258,7 @@ graph [
   ]
   edge [
     source 4
-    target 19
+    target 16
     frequency 1
   ]
   edge [
@@ -383,7 +278,7 @@ graph [
   ]
   edge [
     source 5
-    target 28
+    target 25
     frequency 1
   ]
   edge [
@@ -393,82 +288,77 @@ graph [
   ]
   edge [
     source 6
-    target 28
+    target 25
     frequency 1
   ]
   edge [
     source 6
+    target 12
+    frequency 1
+  ]
+  edge [
+    source 7
     target 15
     frequency 1
   ]
   edge [
     source 7
+    target 11
+    frequency 1
+  ]
+  edge [
+    source 8
+    target 20
+    frequency 1
+  ]
+  edge [
+    source 8
+    target 24
+    frequency 1
+  ]
+  edge [
+    source 8
+    target 10
+    frequency 2
+  ]
+  edge [
+    source 9
     target 18
     frequency 1
   ]
   edge [
-    source 7
-    target 14
-    frequency 1
-  ]
-  edge [
-    source 8
-    target 10
-    frequency 1
-  ]
-  edge [
-    source 8
-    target 9
-    frequency 1
-  ]
-  edge [
-    source 8
-    target 31
-    frequency 1
-  ]
-  edge [
-    source 8
-    target 35
-    frequency 2
-  ]
-  edge [
     source 9
-    target 35
+    target 22
     frequency 1
   ]
   edge [
     source 9
-    target 37
-    frequency 1
-  ]
-  edge [
-    source 9
-    target 10
+    target 17
     frequency 2
   ]
   edge [
     source 10
-    target 36
-    frequency 2
+    target 20
+    frequency 1
   ]
   edge [
-    source 11
-    target 23
+    source 10
+    target 24
     frequency 1
   ]
   edge [
     source 11
-    target 27
+    target 15
     frequency 1
   ]
   edge [
     source 11
     target 13
-    frequency 2
+    frequency 1
   ]
   edge [
-    source 12
-    target 21
+    source 11
+    target 12
     frequency 1
   ]
   edge [
@@ -478,82 +368,82 @@ graph [
   ]
   edge [
     source 12
-    target 20
-    frequency 2
-  ]
-  edge [
-    source 13
-    target 23
-    frequency 1
-  ]
-  edge [
-    source 13
-    target 27
-    frequency 1
-  ]
-  edge [
-    source 14
-    target 18
-    frequency 1
-  ]
-  edge [
-    source 14
-    target 16
-    frequency 1
-  ]
-  edge [
-    source 14
     target 15
     frequency 1
   ]
   edge [
-    source 15
-    target 28
+    source 12
+    target 13
+    frequency 2
+  ]
+  edge [
+    source 13
+    target 25
     frequency 1
   ]
   edge [
-    source 15
-    target 18
+    source 13
+    target 15
     frequency 1
   ]
   edge [
-    source 15
+    source 14
+    target 17
+    frequency 1
+  ]
+  edge [
+    source 14
+    target 25
+    frequency 1
+  ]
+  edge [
+    source 14
     target 16
     frequency 2
   ]
   edge [
     source 16
-    target 28
+    target 17
     frequency 1
   ]
   edge [
     source 16
-    target 18
+    target 25
     frequency 1
   ]
   edge [
-    source 17
-    target 20
-    frequency 1
-  ]
-  edge [
-    source 17
-    target 28
-    frequency 1
-  ]
-  edge [
-    source 17
+    source 18
     target 19
+    frequency 1
+  ]
+  edge [
+    source 18
+    target 21
+    frequency 1
+  ]
+  edge [
+    source 18
+    target 22
     frequency 2
   ]
   edge [
     source 19
-    target 20
+    target 21
     frequency 1
   ]
   edge [
     source 19
-    target 28
+    target 22
+    frequency 1
+  ]
+  edge [
+    source 19
+    target 23
+    frequency 1
+  ]
+  edge [
+    source 20
+    target 24
     frequency 1
   ]
   edge [
@@ -563,157 +453,12 @@ graph [
   ]
   edge [
     source 21
-    target 24
-    frequency 1
-  ]
-  edge [
-    source 21
-    target 25
+    target 23
     frequency 2
-  ]
-  edge [
-    source 22
-    target 24
-    frequency 1
-  ]
-  edge [
-    source 22
-    target 25
-    frequency 1
-  ]
-  edge [
-    source 22
-    target 26
-    frequency 1
   ]
   edge [
     source 23
-    target 27
+    target 24
     frequency 1
-  ]
-  edge [
-    source 24
-    target 25
-    frequency 1
-  ]
-  edge [
-    source 24
-    target 26
-    frequency 2
-  ]
-  edge [
-    source 26
-    target 27
-    frequency 1
-  ]
-  edge [
-    source 29
-    target 30
-    frequency 1
-  ]
-  edge [
-    source 29
-    target 38
-    frequency 1
-  ]
-  edge [
-    source 29
-    target 33
-    frequency 2
-  ]
-  edge [
-    source 30
-    target 33
-    frequency 1
-  ]
-  edge [
-    source 30
-    target 38
-    frequency 1
-  ]
-  edge [
-    source 31
-    target 32
-    frequency 1
-  ]
-  edge [
-    source 31
-    target 35
-    frequency 1
-  ]
-  edge [
-    source 31
-    target 37
-    frequency 1
-  ]
-  edge [
-    source 32
-    target 40
-    frequency 1
-  ]
-  edge [
-    source 32
-    target 39
-    frequency 1
-  ]
-  edge [
-    source 32
-    target 35
-    frequency 1
-  ]
-  edge [
-    source 32
-    target 37
-    frequency 1
-  ]
-  edge [
-    source 33
-    target 38
-    frequency 1
-  ]
-  edge [
-    source 34
-    target 35
-    frequency 1
-  ]
-  edge [
-    source 34
-    target 37
-    frequency 1
-  ]
-  edge [
-    source 34
-    target 36
-    frequency 1
-  ]
-  edge [
-    source 35
-    target 36
-    frequency 1
-  ]
-  edge [
-    source 35
-    target 37
-    frequency 2
-  ]
-  edge [
-    source 36
-    target 37
-    frequency 1
-  ]
-  edge [
-    source 38
-    target 40
-    frequency 1
-  ]
-  edge [
-    source 38
-    target 39
-    frequency 2
-  ]
-  edge [
-    source 39
-    target 40
-    frequency 2
   ]
 ]

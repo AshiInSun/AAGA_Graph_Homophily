@@ -2,128 +2,128 @@ graph [
   node [
     id 0
     label "1"
-    type 0
     aaLength 4
     sequence "ASKI"
+    chem 0
   ]
   node [
     id 1
     label "2"
-    type 1
     aaLength 3
     sequence "AFV"
+    chem 1
   ]
   node [
     id 2
     label "3"
-    type 1
     aaLength 6
     sequence "IDVLLG"
+    chem 1
   ]
   node [
     id 3
     label "4"
-    type 1
     aaLength 8
     sequence "KIVFKNNA"
+    chem 1
   ]
   node [
     id 4
     label "5"
-    type 1
     aaLength 8
     sequence "GETFEVAL"
+    chem 1
   ]
   node [
     id 5
     label "6"
-    type 1
     aaLength 5
     sequence "SEFSI"
+    chem 1
   ]
   node [
     id 6
     label "7"
-    type 1
     aaLength 8
     sequence "MVGKVTVN"
+    chem 1
   ]
   node [
     id 7
     label "8"
-    type 1
     aaLength 7
     sequence "GEYSFYC"
+    chem 1
   ]
   node [
     id 8
     label "9"
-    type 1
     aaLength 3
     sequence "VFD"
+    chem 1
   ]
   node [
     id 9
     label "10"
-    type 2
     aaLength 4
     sequence "ADDG"
+    chem 2
   ]
   node [
     id 10
     label "11"
-    type 2
     aaLength 4
     sequence "FVPS"
+    chem 2
   ]
   node [
     id 11
     label "12"
-    type 2
     aaLength 4
     sequence "SPGE"
+    chem 2
   ]
   node [
     id 12
     label "13"
-    type 2
     aaLength 4
     sequence "DEDS"
+    chem 2
   ]
   node [
     id 13
     label "14"
-    type 2
     aaLength 4
     sequence "PSGV"
+    chem 2
   ]
   node [
     id 14
     label "15"
-    type 2
     aaLength 4
     sequence "SEED"
+    chem 2
   ]
   node [
     id 15
     label "16"
-    type 2
     aaLength 4
     sequence "AKGE"
+    chem 2
   ]
   node [
     id 16
     label "17"
-    type 2
     aaLength 4
     sequence "CSPH"
+    chem 2
   ]
   node [
     id 17
     label "18"
-    type 2
     aaLength 4
     sequence "QGAG"
+    chem 2
   ]
   edge [
     source 0
