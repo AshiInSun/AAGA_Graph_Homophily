@@ -1,17 +1,20 @@
 import os
 import ogb
 import networkx as nx
-from torch_geometric.utils import to_networkx
+from torch_geometric.utils import to_networkx, from_networkx
 from tqdm import tqdm
 
 import test
-from test import normalize_inplace
+from experimental_comparaison import normalize_inplace
 
 import torch
 from torch.serialization import add_safe_globals
 from torch_geometric.data.data import DataEdgeAttr, DataTensorAttr
 from torch_geometric.data.storage import GlobalStorage
+from torch_geometric.data import Data
 from ogb.graphproppred import PygGraphPropPredDataset
+
+from typing import Optional, List
 
 # Sécurité : autoriser certains objets dans torch.load
 safe_classes = [DataTensorAttr, DataEdgeAttr, GlobalStorage]
@@ -19,16 +22,70 @@ add_safe_globals(safe_classes)
 
 # Paramètres globaux
 max_graphs = 2000
-output_dir = "../datasets/OGB_CODE2_GML"
+output_dir = "../datasets/OGB_MOLPCBA_GML"
+output_dir2 = "../datasets/OGB_CODE2_GML"
 path_dataset = "../datasets/Mutagenicity_GML"
 
 
-def retrieve_ogb_molpcba_dataset():
-    print("🔹 Téléchargement / chargement du dataset OGB (ogbg-code2)...")
-    dataset = PygGraphPropPredDataset(name='ogbg-code2', root='data/ogb')
+def retrieve_ogb_molpcba_dataset(nameds):
+    print("🔹 Téléchargement / chargement du dataset OGB (ogbg-molpcba)...")
+    dataset = PygGraphPropPredDataset(name=nameds, root='data/ogb')
     print("✅ Dataset chargé avec succès !")
     print(f"📊 Nombre total de graphes : {len(dataset)}")
     print(f"🧩 Exemple de graphe : {dataset[0]}")
+    return dataset
+
+def retrieve_protein_dataset(path: str = '../datasets/Protein_GML',
+                             limit: Optional[int] = None,
+                             use_tqdm: bool = False) -> List[Data]:
+    """
+    Charge tous les .gml de `path`, convertit chaque NetworkX Graph en torch_geometric.data.Data,
+    crée `data.x` à partir de l'attribut de nœud 'chem' si présent (sinon 0) et retourne une liste.
+    """
+    if not os.path.isdir(path):
+        raise FileNotFoundError(f"Le répertoire {path} n'existe pas.")
+
+    files = sorted([f for f in os.listdir(path) if f.lower().endswith('.gml')])
+    if limit is not None:
+        files = files[:limit]
+
+    dataset: List[Data] = []
+    iterator = tqdm(files, desc="Chargement GML") if use_tqdm else files
+
+    for fname in iterator:
+        full_path = os.path.join(path, fname)
+        try:
+            G = nx.read_gml(full_path)
+
+            if G.number_of_nodes() == 0:
+                continue
+
+            # indexation contiguë des nœuds
+            G = nx.convert_node_labels_to_integers(G, first_label=0)
+
+            # récupérer l'attribut 'chem' par nœud (fallback 0)
+            chem_vals = []
+            for n in G.nodes():
+                v = G.nodes[n].get('chem', 0)
+                # gérer cas où la valeur est une chaîne/float dans le GML
+                try:
+                    v = int(float(v))
+                except Exception:
+                    v = 0
+                chem_vals.append(v)
+
+            # conversion NetworkX -> PyG Data
+            data = from_networkx(G)
+
+            # forcer la présence de data.x comme tenseur [num_nodes, 1]
+            data.x = torch.tensor([[val] for val in chem_vals], dtype=torch.long)
+            data.num_nodes = data.x.size(0)
+
+            dataset.append(data)
+
+        except Exception as e:
+            print(f"Erreur lors du chargement de {fname} : {e}")
+
     return dataset
 
 
@@ -74,13 +131,20 @@ def conversion(dataset, output_dir="datasets/OGB_CODE2_GML", max_graphs=2000):
     print(f"📦 {num_converted} graphes sauvegardés avec succès dans : {output_dir}")
     print(f"⚠️ {num_failed} graphes n'ont pas pu être convertis.\n")
 
+def code2_retrieve():
+    dataset = retrieve_ogb_molpcba_dataset("ogbg-code2")
+    conversion(dataset, output_dir=output_dir2, max_graphs=max_graphs)
+def molpcba_retrieve():
+    dataset = retrieve_ogb_molpcba_dataset("ogbg-molpcba")
+    conversion(dataset, output_dir=output_dir, max_graphs=max_graphs)
+
 
 def main_retrieve():
     print("=== DÉMARRAGE DU PIPELINE ===")
-    dataset = retrieve_ogb_molpcba_dataset()
-    conversion(dataset, output_dir=output_dir, max_graphs=max_graphs)
+    molpcba_retrieve()
+    code2_retrieve()
     print("=== FIN DU PIPELINE ===")
 
 
 # Pour exécuter :
-#main_retrieve()
+# main_retrieve()
