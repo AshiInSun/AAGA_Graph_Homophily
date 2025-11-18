@@ -11,8 +11,8 @@ import experimental_comparaison
 #On a N(v) l'ensemble des voisins de v i.e. les noeuds connectés à v par une arête. |N(v)| = d(v)
 #On a n(k) le nombre de noeuds de label k. D(k) la somme des dégrés des noeuds de label k.
 
-path_dataset_one = "datasets/OGB_MOLPCBA_GML"
-path_dataset_two = "datasets/OGB_CODE2_GML"
+path_dataset_one = "datasets/TUD_DD_GML"
+path_dataset_two = "datasets/TUD_ZINC_GML"
 
 
 # Assigner des labels aléatoires (par exemple 3 classes)
@@ -68,9 +68,6 @@ def main():
     print("Results :\n")
     experimental_comparaison.experimental_comparaison(path_dataset_two, label_G="chem")
     print("\n")
-    print("Testing PROT from OGB, AST graph, 125 node and 124 edge per graph on average.")
-    print("Results :\n")
-    experimental_comparaison.experimental_comparaison("datasets/Protein_GML", label_G="type")
     print("Ending the test")
 
 main()

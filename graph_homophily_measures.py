@@ -98,8 +98,8 @@ def compute_cii(G, class_atr):
     return cii_vec
 
 
-def unbiased_homophily(G, class_atr):
-    cii_vec = compute_cii(G, class_atr)
+def unbiased_homophily(G, class_attr):
+    cii_vec = compute_cii(G, class_attr)
 
     S = np.sum(np.sqrt(cii_vec))
     numerator = S**2 - 1
