@@ -11,8 +11,8 @@ import experimental_comparaison
 #On a N(v) l'ensemble des voisins de v i.e. les noeuds connectés à v par une arête. |N(v)| = d(v)
 #On a n(k) le nombre de noeuds de label k. D(k) la somme des dégrés des noeuds de label k.
 
-path_dataset_one = "datasets/TUDNCI1_GML"
-path_dataset_two = "datasets/TUDIMDBBINARY_GML"
+path_dataset_one = "datasets/TUD_DD_GML"
+path_dataset_two = "datasets/TUD_ZINC_GML"
 
 
 # Assigner des labels aléatoires (par exemple 3 classes)
@@ -42,18 +42,18 @@ def plot_graph(G, class_attr):
 # Tests
 def testing_one_graph():
     label_G = 'chem'
-    G = nx.read_gml("datasets/TUDIMDBBINARY_GML/graph_998.gml")
+    G = nx.read_gml("datasets/TUD_DD_GML/graph_94.gml")
     experimental_comparaison.normalize_inplace(G)
     g_edge_homophily = graph_homophily_measures.edge_homophily(G, class_attr=label_G)
     g_node_homophily = graph_homophily_measures.node_homophily(G, class_attr=label_G)
     g_class_homophily = graph_homophily_measures.class_homophily(G, class_attr=label_G)
-    #g_adjusted_homophily = graph_homophily_measures.adjusted_homophily(G, class_attr=label_G)
+    g_adjusted_homophily = graph_homophily_measures.adjusted_homophily(G, class_attr=label_G)
     #g_unbiased_homophily = graph_homophily_measures.unbiased_homophily(G, class_attr=label_G)
 
     print(f"\nGraph edge homophily : {g_edge_homophily}")
     print(f"Graph node homophily : {g_node_homophily}")
     print(f"Graph class homophily : {g_class_homophily}")
-    #print(f"Graph adjusted homophily : {g_adjusted_homophily}")
+    print(f"Graph adjusted homophily : {g_adjusted_homophily}")
     #print(f"Graph unbiased homophily : {g_unbiased_homophily}")
 
     plot_graph(G, class_attr=label_G)

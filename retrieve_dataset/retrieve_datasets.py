@@ -25,8 +25,8 @@ add_safe_globals(safe_classes)
 max_graphs = 2000
 output_dir = "../datasets/OGB_MOLPCBA_GML"
 output_dir2 = "../datasets/OGB_CODE2_GML"
-output_dir3 = "../datasets/TUDNCI1_GML"
-output_dir4 = "../datasets/TUDIMDBBINARY_GML"
+output_dir3 = "../datasets/TUD_DD_GML"
+output_dir4 = "../datasets/TUD_ZINC_GML"
 path_dataset = "../datasets/Mutagenicity_GML"
 
 
@@ -40,14 +40,14 @@ def retrieve_ogb_molpcba_dataset(nameds):
 
 def retrieve_tudataset():
     print("🔹 Téléchargement / chargement du dataset TUD NCI1...")
-    dataset = TUDataset(root="data/COLLAB", name="COLLAB")
+    dataset = TUDataset(root="data/DD", name="DD")
     print("Dataset chargé avec succès !")
     print(f"Nombre total de graphes : {len(dataset)}")
     return dataset
 
 def retrieve_tudatasetbin():
     print("🔹 Téléchargement / chargement du dataset TUD IMDB-BINARY...")
-    dataset = TUDataset(root="data/REDDIT-BINARY", name="REDDIT-BINARY")
+    dataset = TUDataset(root="data/ZINC_test", name="ZINC_test")
     print("Dataset chargé avec succès !")
     print(f"Nombre total de graphes : {len(dataset)}")
     return dataset
@@ -126,8 +126,25 @@ def conversion(dataset, output_dir="datasets/OGB_CODE2_GML", max_graphs=2000):
                 continue
 
             # Ajouter un label de nœud
+            # python
+            # Bloc sécurisé pour extraire les labels et les appliquer comme attribut "chem"
             if hasattr(data, "x") and data.x is not None:
-                node_labels = {n: int(data.x[n][0].item()) for n in range(data.num_nodes)}
+                x = data.x
+                # Normaliser en tenseur 1D de labels entiers
+                if x.dim() == 1:
+                    labels = x.to(torch.long)
+                else:
+                    labels = x[:, 0].to(torch.long)  # première colonne comme label
+
+                labels = labels.cpu().numpy().tolist()
+                num_nodes = G.number_of_nodes()
+                # Ajuster si longueur différente : tronquer ou compléter par 0
+                if len(labels) < num_nodes:
+                    labels = labels + [0] * (num_nodes - len(labels))
+                elif len(labels) > num_nodes:
+                    labels = labels[:num_nodes]
+
+                node_labels = {n: int(labels[n]) for n in range(num_nodes)}
                 nx.set_node_attributes(G, node_labels, name="chem")
             else:
                 nx.set_node_attributes(G, {n: 0 for n in G.nodes()}, name="chem")

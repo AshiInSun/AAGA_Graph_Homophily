@@ -70,6 +70,9 @@ def adjusted_homophily(G, class_attr):
 
     my_nominator= edje_homophily-my_firstSum
     my_deniminator = 1-my_firstSum
+    if my_deniminator == 0:
+        return 1
+
 
     adjusted_homophily = my_nominator/my_deniminator
     return adjusted_homophily
