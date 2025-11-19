@@ -16,6 +16,10 @@ def normalize_inplace(G):
     if nodes_to_remove:
         G.remove_nodes_from(nodes_to_remove)
 
+def all_homophilia_onaverage():
+    print("TODO")
+    #On fait la moyenne des homophilies pour chaque mesures sur tous les datasets.
+
 def experimental_comparaison(path, label_G):
     chemin_dossier = path
     max_files = 2000  # Nombre maximum de fichiers à traiter
