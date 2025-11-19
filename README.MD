@@ -15,7 +15,7 @@ Requis pour le projet:
 
 ###  Démarrage
 
-Lancez le script bash en executant la commande ```shell ./bash.sh  avec les une des options suivante: 
+Lancez le script bash en executant la commande ```./bash.sh``` avec les une des options suivante: 
 * mean pour les moyennes des mesures d'homophilie sur tous les graphes (./bash.sh mean)
 * measure pour les mesures d'accord d'homophilie (./bash.sh measure) 
 
