@@ -44,9 +44,9 @@ Librairies utilisées:
 * torch-geometric
 
 ## Auteurs
-* ** Morandeau** _alias_ [@outout14](https://github.com/AshiInSun)
-* ** O. Crouzet**_alias_ [@outout14](https://github.com/OrianeCrouzet)
-* **F. Ayed**_alias_ [@outout14](https://github.com/FatiH2O)
+* ** orandeau**  [@https://github.com/AshiInSun]
+* **O. Crouzet**[@https://github.com/OrianeCrouzet]
+* **F. Ayed** [@https://github.com/FatiH2O]
 
 ## License
 
