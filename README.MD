@@ -45,7 +45,7 @@ Librairies utilisées:
 
 ## Auteurs
 * ** orandeau**  [https://github.com/AshiInSun]
-* **O. Crouzet**[@https://github.com/OrianeCrouzet]
+* **O. Crouzet** @https://github.com/OrianeCrouzet
 * **F. Ayed** [@https://github.com/FatiH2O]
 
 ## License
