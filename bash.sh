@@ -33,6 +33,6 @@ fi
 # ======================================
 
 echo ">>> Lancement des calculs sur tous les datasets..."
-python3 test.py
+python3 tests.py
 
 echo ">>> Terminé."
