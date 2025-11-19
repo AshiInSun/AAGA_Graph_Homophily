@@ -22,14 +22,14 @@ Le script bash mettra en place un environnement virtuel et téléchargera toutes
 Format des resultats d'homophile: 
 
 {
-    "edge": <valeur>,
-    "node": <valeur>,
-    "class": <valeur>,
-    "adjusted": <valeur>,
-    "unbiased": <valeur>
+    "edge": valeur,
+    "node": valeur,
+    "class": valeur,
+    "adjusted": valeur,
+    "unbiased": valeur
 }
 
-D
+
 
 ## Fabriqué avec
 
