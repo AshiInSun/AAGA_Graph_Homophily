@@ -11,8 +11,16 @@ import experimental_comparaison
 #On a N(v) l'ensemble des voisins de v i.e. les noeuds connectés à v par une arête. |N(v)| = d(v)
 #On a n(k) le nombre de noeuds de label k. D(k) la somme des dégrés des noeuds de label k.
 
-path_dataset_one = "datasets/TUD_DD_GML"
-path_dataset_two = "datasets/TUD_ZINC_GML"
+path_dataset_TUD = "datasets/TUD_DD_GML"
+path_dataset_ZINC = "datasets/TUD_ZINC_GML"
+path_dataset_AIDS = "datasets/AIDS_GML"
+path_dataset_MUTAG = "datasets/Mutagenicity_GML"
+path_dataset_PROT= "datasets/Protein_GML"
+path_dataset_OGB = "datasets/OGB_CODE2_GML"
+path_dataset_OGBM = "datasets/OGB_MOLPCBA_GML"
+
+
+
 
 
 # Assigner des labels aléatoires (par exemple 3 classes)
@@ -59,20 +67,31 @@ def testing_one_graph():
     plot_graph(G, class_attr=label_G)
 
 def main():
-    """
-    print("Starting the test\n")
-    print("Testing MOLPCBA from OGB, molecular graph, 26 node and 28 edge per graph on average.")
-    print("Results :\n")
-    experimental_comparaison.experimental_comparaison(path_dataset_one, label_G="chem")
-    print("\n")
-    print("Testing CODE2 from OGB, AST graph, 125 node and 124 edge per graph on average.")
-    print("Results :\n")
-    experimental_comparaison.experimental_comparaison(path_dataset_two, label_G="chem")
-    print("\n")
-    """
+    
     print("Table 5 loading...")
     experimental_comparaison.all_homophilia_onaverage_all_datasets(label_G="chem")
     print("\n")
     print("Ending the test")
 
-main()
+def main_experimental():
+    """Lance experimental_comparaison sur tous les datasets"""
+    print(f"\nTUD_DD_GML   ")
+    experimental_comparaison.experimental_comparaison(path_dataset_TUD,label_G="chem")
+    print(f"\nZINC_GML   ")
+    experimental_comparaison.experimental_comparaison(path_dataset_ZINC,label_G="chem")
+    print(f"\nAIDS_GML   ")
+    experimental_comparaison.experimental_comparaison(path_dataset_AIDS,label_G="chem")
+    print(f"\nMutagenicity_GML   ")
+    experimental_comparaison.experimental_comparaison(path_dataset_MUTAG,label_G="chem")
+    print(f"\nProtein_GML   ")
+    experimental_comparaison.experimental_comparaison(path_dataset_PROT,label_G="chem")
+    print(f"\nOGB_CODE2_GML   ")
+    experimental_comparaison.experimental_comparaison(path_dataset_OGB,label_G="chem")
+    print(f"\nOGB_MOLPCBA_GML   ")
+    experimental_comparaison.experimental_comparaison(path_dataset_OGBM,label_G="chem")
+
+
+
+
+
+
