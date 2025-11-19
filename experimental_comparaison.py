@@ -6,7 +6,7 @@ from tqdm import trange
 
 import graph_homophily_measures
 
-path_dataset = "datasets/OGB_CODE2_GML"
+#path_dataset = "datasets/OGB_CODE2_GML"
 
 def normalize_inplace(G):
     """
@@ -16,9 +16,85 @@ def normalize_inplace(G):
     if nodes_to_remove:
         G.remove_nodes_from(nodes_to_remove)
 
-def all_homophilia_onaverage():
-    print("TODO")
-    #On fait la moyenne des homophilies pour chaque mesures sur tous les datasets.
+def all_homophilia_onaverage_all_datasets(label_G, root_path="datasets"):
+    """
+    Pour chaque sous-dossier dans `datasets/`, calcule les moyennes d'homophilie
+    et retourne un dictionnaire des résultats.
+    """
+
+    results = {}
+
+    # Liste des sous-dossiers dans datasets/
+    datasets = [
+        d for d in os.listdir(root_path)
+        if os.path.isdir(os.path.join(root_path, d))
+    ]
+
+    if not datasets:
+        print("Aucun dataset trouvé dans le dossier", root_path)
+        return None
+
+    for dataset_name in datasets:
+        print(f"\n=== Traitement du dataset : {dataset_name} ===")
+        dataset_path = os.path.join(root_path, dataset_name)
+        dataset_results = all_homophilia_onaverage_single(dataset_path, label_G)
+        results[dataset_name] = dataset_results
+
+    print("\n\n=== Résultats finaux (Tableau 5) ===")
+    for name, res in results.items():
+        print(f"\nDataset : {name}")
+        print(res)
+
+    return results
+
+def all_homophilia_onaverage_single(path, label_G):
+    noms_fichiers = [
+        f for f in os.listdir(path)
+        if os.path.isfile(os.path.join(path, f))
+    ]
+
+    sum_edge = 0
+    sum_node = 0
+    sum_class = 0
+    sum_adjusted = 0
+    sum_unbiased = 0
+    count = 0
+
+    for f in trange(len(noms_fichiers), desc="Calcul des homophilies", unit="graphe"):
+        fichier = os.path.join(path, noms_fichiers[f])
+
+        try:
+            G = nx.read_gml(fichier)
+            normalize_inplace(G)
+
+            h_edge = graph_homophily_measures.edge_homophily(G, class_attr=label_G)
+            h_node = graph_homophily_measures.node_homophily(G, class_attr=label_G)
+            h_class = graph_homophily_measures.class_homophily(G, class_attr=label_G)
+            h_adjusted = graph_homophily_measures.adjusted_homophily(G, class_attr=label_G)
+            h_unbiased = graph_homophily_measures.unbiased_homophily(G, class_attr=label_G)
+
+            sum_edge += h_edge
+            sum_node += h_node
+            sum_class += h_class
+            sum_adjusted += h_adjusted
+            sum_unbiased += h_unbiased
+
+            count += 1
+
+        except Exception as e:
+            print(f"Erreur dans {fichier} : {e}")
+
+    if count == 0:
+        return None
+
+    return {
+        "edge": sum_edge / count,
+        "node": sum_node / count,
+        "class": sum_class / count,
+        "adjusted": sum_adjusted / count,
+        "unbiased": sum_unbiased / count
+    }
+
 
 def experimental_comparaison(path, label_G):
     chemin_dossier = path

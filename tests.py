@@ -59,6 +59,7 @@ def testing_one_graph():
     plot_graph(G, class_attr=label_G)
 
 def main():
+    """
     print("Starting the test\n")
     print("Testing MOLPCBA from OGB, molecular graph, 26 node and 28 edge per graph on average.")
     print("Results :\n")
@@ -67,6 +68,10 @@ def main():
     print("Testing CODE2 from OGB, AST graph, 125 node and 124 edge per graph on average.")
     print("Results :\n")
     experimental_comparaison.experimental_comparaison(path_dataset_two, label_G="chem")
+    print("\n")
+    """
+    print("Table 5 loading...")
+    experimental_comparaison.all_homophilia_onaverage_all_datasets(label_G="chem")
     print("\n")
     print("Ending the test")
 
