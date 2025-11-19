@@ -1,34 +1,27 @@
 ## Revisiting Graph Homophily Measures Semaine II 
 
-Projet dans le cadre de l'UE d'AAGA. Nous appliquons les mesures d'homophilie sur plusieurs graphes et discutons des résultats trouvés à la lumière de l'article étudié 
+Projet dans le cadre de l'UE d'AAGA. Nous appliquons différentes mesures d'homophilie sur plusieurs graphes et discutons des résultats trouvés à la lumière de l'article étudié 
 
 
 ## Pour commencer
 
-Télécharger le zip et dézippé puis ouvrir un terminal.
+Télécharger le zip et dézippé puis l'ouvrir dans un  terminal.
 ### Pré-requis
 
 Requis pour le projet:
-
+-Environnement linux (possible sur wsl mais prend beaucoup de temps)
 - Python 3.8+
 - Pip
 
 ###  Démarrage
 
-Lancez le script bash en executant la commande ./bash.sh. Donnez les droit d'execution si nécéssaire avec chmod +x run.sh
+Lancez le script bash en executant la commande ./bash.sh avec les une des options suivante: 
+* mean pour les moyennes des mesures d'homophilie sur tous les graphes (./bash.sh mean)
+* measure pour les mesures d'accord d'homophilie (./bash.sh measure) 
 
-Le script bash mettra en place un environnement virtuel et téléchargera toutes les dépendances requises, ceci peux prendre environ 3 min lors du premier lancement. Ensuite toutes les mesures d'homophile sur chaque graphe s'afficheront, ceci peut prendre environ 1 min.
+Donnez les droits d'execution si nécéssaire avec chmod +x bash.sh
 
-Format des resultats d'homophile: 
-
-{
-    "edge": valeur,
-    "node": valeur,
-    "class": valeur,
-    "adjusted": valeur,
-    "unbiased": valeur
-}
-
+Le script bash mettra en place un environnement virtuel et téléchargera toutes les dépendances requises, ceci peux prendre du temps lors du premier lancement. 
 
 
 ## Fabriqué avec
