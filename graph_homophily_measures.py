@@ -105,4 +105,7 @@ def unbiased_homophily(G, class_attr):
     numerator = S**2 - 1
     denominator = S**2 + 1 - 2 * np.sum(cii_vec)
 
+    if denominator == 0:    #une seule classe dans le graphe
+        return 1.0  
+
     return numerator / denominator

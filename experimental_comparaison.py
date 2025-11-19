@@ -40,10 +40,10 @@ def all_homophilia_onaverage_all_datasets(label_G, root_path="datasets"):
         dataset_results = all_homophilia_onaverage_single(dataset_path, label_G)
         results[dataset_name] = dataset_results
 
-    print("\n\n=== Résultats finaux (Tableau 5) ===")
+    print("\n\n=== Résultats finaux (Tableau 5) ===", flush=True)
     for name, res in results.items():
-        print(f"\nDataset : {name}")
-        print(res)
+        print(f"\nDataset : {name}", flush=True)
+        print(res, flush=True)
 
     return results
 
@@ -88,11 +88,11 @@ def all_homophilia_onaverage_single(path, label_G):
         return None
 
     return {
-        "edge": sum_edge / count,
-        "node": sum_node / count,
-        "class": sum_class / count,
-        "adjusted": sum_adjusted / count,
-        "unbiased": sum_unbiased / count
+        "edge": float(sum_edge / count),
+        "node": float(sum_node / count),
+        "class": float(sum_class / count),
+        "adjusted": float(sum_adjusted / count),
+        "unbiased": float(sum_unbiased / count)
     }
 
 
