@@ -1,6 +1,7 @@
-    This repositery is a study of the Alias Algorithm and his implementation in the unuran Library. 
-    You will find the references in the README file. 
-    Copyright (C) 2025  Timothée Morandeau, Rodrigo Vila, with the supervision of Antoine Genitri and Mehdi Naima.
+    This repositery is a study of the differents homophily measure.
+    We did experiments on graphs, and discussion around hypergraphs
+    Copyright (C) 2025  Fatima Ayed, Oriane Crouzet, Timothée Morandeau,
+    with the supervision of Mehdi Naima and Lionel Tabourier.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
