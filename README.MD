@@ -1,5 +1,4 @@
-## Revisiting Graph Homophily Measures
-Semaine II 
+## Revisiting Graph Homophily Measures Semaine II 
 
 Projet dans le cadre de l'UE d'AAGA. Nous appliquons les mesures d'homophilie sur plusieurs graphes et discutons des résultats trouvés à la lumière de l'article étudié 
 
