@@ -44,18 +44,14 @@ Librairies utilisées:
 * torch-geometric
 
 ## Auteurs
-* ** orandeau**  [https://github.com/AshiInSun]
-* **O. Crouzet** @https://github.com/OrianeCrouzet
-* **F. Ayed** [@https://github.com/FatiH2O]
+[ T.orandeau]  (https://github.com/AshiInSun)
+[O. Crouzet] (https://github.com/OrianeCrouzet)
+[F. Ayed] (https://github.com/FatiH2O)
 
 ## License
 
 Ce projet est sous licence ``MIT`` 
 
-## Auteurs / Contributors
-
-- [Alice Dupont](https://github.com/alice) — Responsable calculs homophilie  
-- [Bob Martin](https://github.com/bob) — Responsable visualisation et scripts Bash
 
 
 
