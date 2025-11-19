@@ -40,11 +40,10 @@ Librairies utilisées:
 * numpy
 * tqdm
 * ogb
-* torch*
+* torch
 * torch-geometric
 
 ## Auteurs
-Listez le(s) auteur(s) du projet ici !
 * ** Morandeau** _alias_ [@outout14](https://github.com/AshiInSun)
 * ** O. Crouzet**_alias_ [@outout14](https://github.com/OrianeCrouzet)
 * **F. Ayed**_alias_ [@outout14](https://github.com/FatiH2O)
