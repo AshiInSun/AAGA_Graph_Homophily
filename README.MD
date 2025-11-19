@@ -35,13 +35,13 @@ Format des resultats d'homophile:
 
 Librairies utilisées:
 
-*networkx
-*matplotlib
-*numpy
-*tqdm
-*ogb
-*torch*
-torch-geometric
+* networkx
+* matplotlib
+* numpy
+* tqdm
+* ogb
+* torch*
+* torch-geometric
 
 ## Auteurs
 Listez le(s) auteur(s) du projet ici !
