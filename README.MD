@@ -5,7 +5,7 @@ Projet dans le cadre de l'UE d'AAGA. Nous appliquons les mesures d'homophilie su
 
 ## Pour commencer
 
-Télécharger le zip et ouvrir dans un environnement de développement comme VisualCode. Bien veillez à ce que le fichier datasets soit au meme niveau que les autres fichiers (déja fait dans le zip).
+Télécharger le zip et dézippé puis ouvrir un terminal.
 ### Pré-requis
 
 Requis pour le projet:
@@ -14,6 +14,7 @@ Requis pour le projet:
 - Pip
 
 ###  Démarrage
+
 Lancez le script bash en executant la commande ./bash.sh. Donnez les droit d'execution si nécéssaire avec chmod +x run.sh
 
 Le script bash mettra en place un environnement virtuel et téléchargera toutes les dépendances requises, ceci peux prendre environ 3 min lors du premier lancement. Ensuite toutes les mesures d'homophile sur chaque graphe s'afficheront, ceci peut prendre environ 1 min.
