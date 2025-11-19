@@ -5,11 +5,11 @@ Projet dans le cadre de l'UE d'AAGA. Nous appliquons différentes mesures d'homo
 
 ## Pour commencer
 
-Télécharger le zip et dézippé puis l'ouvrir dans un  terminal.
+Télécharger le zip et dézippé puis l'ouvrir dans un  terminal, préférablement sur linux.
 ### Pré-requis
 
 Requis pour le projet:
--Environnement linux (possible sur wsl mais prend beaucoup de temps)
+- Environnement linux (possible sur wsl mais prend beaucoup de temps)
 - Python 3.8+
 - Pip
 
