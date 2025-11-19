@@ -52,5 +52,10 @@ Librairies utilisées:
 
 Ce projet est sous licence ``MIT`` 
 
+## Auteurs / Contributors
+
+- [Alice Dupont](https://github.com/alice) — Responsable calculs homophilie  
+- [Bob Martin](https://github.com/bob) — Responsable visualisation et scripts Bash
+
 
 
