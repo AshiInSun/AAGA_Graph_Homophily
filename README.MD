@@ -37,7 +37,7 @@ Librairies utilisées:
 * torch-geometric
 
 ## Auteurs
-* [T.orandeau](https://github.com/AshiInSun)
+* [T.Morandeau](https://github.com/AshiInSun)
 * [O. Crouzet](https://github.com/OrianeCrouzet)
 * [F. Ayed](https://github.com/FatiH2O)
 
